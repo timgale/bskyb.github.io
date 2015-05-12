@@ -1,14 +1,16 @@
-<section class="module clearfix tabs-container page-nav" data-function="tabs" id='main-nav-tabs'>    
-<ul class="tabs clearfix" role="tablist">
-       <li id="home-tab" class="tab selected" nav-control="home-tab">
-                <a href="/" class="ellipsis internal-link"><span>Home</span></a>
-            </li>
-        {% for page in site.pages %}
-          {% if page.title %}
-            <li id="{{page.title}}" class="tab" role="tab">
-                <a href="{{ page.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ page.title }}</span></a>
-            </li>
-          {% endif %}
-        {% endfor %}
-    </ul>
+<section class="module clearfix tabs-container page-nav" data-function="tabs" id='main-nav-tabs'>
+  <ul class="tabs clearfix" role="tablist">
+    {% assign pages = site.pages | sort:"order" %}
+    {% for p in pages %}
+    {% if p.title %}
+    {% if p.url == page.url %}
+    <li id="{{p.title}}" class="tab selected" role="tab">
+    {% else %}
+    <li id="{{p.title}}" class="tab" role="tab">
+    {% endif %}
+      <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
 </section>
