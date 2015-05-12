@@ -1,13 +1,14 @@
-<header class="blog-header">
-  <img src="/images/sky-logo.png" alt="Sky Developers" />    
-  <nav>
-    <ul>
+<section class="module clearfix tabs-container page-nav" data-function="tabs" id='main-nav-tabs'>    
+<ul class="tabs clearfix" role="tablist">
+       <li id="home-tab" class="tab selected" nav-control="home-tab">
+                <a href="/" class="ellipsis internal-link"><span>Home</span></a>
+            </li>
         {% for page in site.pages %}
-          {% if page.title %}      
-            <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% if page.title %}
+            <li id="{{page.title}}" class="tab" role="tab">
+                <a href="{{ page.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ page.title }}</span></a>
+            </li>
           {% endif %}
         {% endfor %}
-      <li><a href="http://www.workforsky.com/">Work For Sky</a></li>
     </ul>
-  </nav>    
-</header>
+</section>

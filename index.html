@@ -1,26 +1,44 @@
 ---
 layout: default
 ---
-
-<div class="content-container">
-  <section>
-    <h2>Latest Blog Posts</h2>
-      {% for post in site.posts %}
-<article>
-    <header class="post-header">
-        <div class="post-details">
-            <h1 class="post-title">
-                {{post.title}}
-            </h1>
-            <p>
-                <time class="post-date">Posted on {{ post.date | date: "%b %-d, %Y" }}</time>
-            </p>
-        </div>  
-    </header>
-    <div class="post-content">
-        {{post.content}}
+<div class="skycom-12">
+    <div class="skycom-container clearfix" >
+        <div class="alpha skycom-12">
+        {% include carousel.html %}
+        </div>
     </div>
-</article>
-      {% endfor %}
-  </section>
-</div>
+    <div class="container marketing">
+        <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">
+                        The new developers portal.<span class="text-muted">  It'll blow your mind</span></h2>
+            <p class="lead text--instructions">The new portal for Developers @ sky.  A source of <a href="opensource.html">OPENSOURCE</a> work, <a href="meetups.html">MEETUPS</a> and <a href="vacancies.html">VACANCIES</a> for those interested in joining our great team.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="http://www.sky.com/shop/export/sites/www.sky.com/shop/__Images/Campaigns/Minions/Minions_Vanquish_BB_Fibre_Bottom_Pod.png_679063726.png" alt="Generic placeholder image">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead text--instructions">Take a look at what's going on for Developers across Sky.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="http://www.sky.com/tv/static/C3DqxkQmSv8YIMTOoxx9VzIHPFVI1fZr1I2rKA2RWOx.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And get busy contributing. <span class="text-muted">Please help!</span></h2>
+           <p class="lead text--instructions">Now please dive in and help.  It's all on github.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="https://secure.sky.com/mysky-homepage/indexb/assets/logged-out/bills-payments-d54f175cb0fedb9f30bd6b315265947e9dae717a.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    </div><!-- /.container -->
+</div>}
