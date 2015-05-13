@@ -12,29 +12,29 @@ You'll need to do a little bit of work with github as our approval process uses 
 
 ## Steps to get started
 
-For those that know how to use git and do pull requests, jump to step 5.
+For those familiar with git and github pull requests, skip forward to installing jekyll.
 
-1. Create a [github account](https://github.com/join) if you don't have one. Any standard github account will do, you don’t need special permissions
+* Create a [github account](https://github.com/join) if you don't have one. Any standard github account will do, you don’t need special permissions
 
-2. Ensure you're running a [git client](http://git-scm.com/downloads) then ensure [you've set it up](https://help.github.com/articles/set-up-git/)
+* Ensure you're running a [git client](http://git-scm.com/downloads) then ensure [you've set it up](https://help.github.com/articles/set-up-git/)
 
-3. Fork our repository.
+* Fork our repository.
 
-4. Clone your fork locally.
+* Clone your fork locally.
 
-5. [Install Jekyll](http://jekyllrb.com/docs/installation/) if you want to preview your blog post. If you don’t want to preview, then don’t worry about Jekyll. On a machine with [RubyGems](https://rubygems.org/pages/download), it's super quick
+* [Install Jekyll](http://jekyllrb.com/docs/installation/) if you want to preview your blog post. If you don’t want to preview, then don’t worry about Jekyll. On a machine with [RubyGems](https://rubygems.org/pages/download), it's super quick
 
     gem install jekyll
 
-6. Run jekyll from within your cloned project
+* Run jekyll from within your cloned project
 
 ```
 jekyll serve
 ```
 
-7. Create a new file in the _posts directory.  Every file represents a post.  Each file should take the format YYYY-MM-DD-<meaningful-name-without-spaces>.markdown.  As an example “2015-04-13-hello-world”
+* Create a new file in the _posts directory.  Every file represents a post.  Each file should take the format YYYY-MM-DD-<meaningful-name-without-spaces>.markdown.  As an example “2015-04-13-hello-world”
 
-8. Open the file and include the following header
+* Open the file and include the following header
 
 ```
 ---
@@ -57,11 +57,12 @@ image: images/test.png
 excerpt: "Sky are attending Google I/O - here's what we're planning to see any why"
 ---
 ```
-9. Write your awesome post using standard markup.  See the [examples][] or [documentation](http://jekyllrb.com/docs/posts/).  If you're running Jekyll, the site will automatically update on saving your post.
 
-10. Add, commit and push your post
+* Write your awesome post using standard markup.  See the [examples][] or [documentation](http://jekyllrb.com/docs/posts/).  If you're running Jekyll, the site will automatically update on saving your post.
 
-11. Create a pull request into master.
+* Add, commit and push your post
+
+* Create a pull request into master.
 
 
 ## A quick note on images
