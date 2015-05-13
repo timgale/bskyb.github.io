@@ -35,7 +35,6 @@ For those that know how to use git and do pull requests, jump to step 5.
 8. Open the file and include the following header”
 
 ```
-{% raw %}
 ---
 layout: post
 title:  “title”
@@ -44,14 +43,12 @@ categories: blog category
 image: a link to an image to be used
 excerpt: “An excerpt you want to appear in the blog summary screen”
 ---
-{% endraw %}
 ```
 
 
 An example is as follows:-
 
 ```
-{% raw %}
 ---
 layout: post
 title:  "Sky at Google I/O"
@@ -60,7 +57,6 @@ categories: conferences
 image: images/test.png
 excerpt: "Sky are attending Google I/O - here's what we're planning to see any why"
 ---
-{% endraw %}
 ```
 
 9. Write your awesome post using standard markup.  See the (examples)[] or (documentation)[http://jekyllrb.com/docs/posts/].  If you're running Jekyll, the site will automatically update on saving your post.
