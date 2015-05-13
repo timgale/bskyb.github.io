@@ -22,9 +22,7 @@ For those that know how to use git and do pull requests, jump to step 5.
 
 4. Clone your fork locally.
 
-5. [Install Jekyll](http://jekyllrb.com/docs/installation/) if you want to preview your blog post. If you don’t want to preview, then don’t worry about Jekyll.
-
-On a machine with [RubyGems](https://rubygems.org/pages/download), it's super quick
+5. [Install Jekyll](http://jekyllrb.com/docs/installation/) if you want to preview your blog post. If you don’t want to preview, then don’t worry about Jekyll. On a machine with [RubyGems](https://rubygems.org/pages/download), it's super quick
 
     gem install jekyll
 
