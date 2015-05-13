@@ -28,7 +28,7 @@ For those that know how to use git and do pull requests, jump to step 5.
 
 6. Run jekyll from within your cloned project
 
-    jekyll serve
+```jekyll serve```
 
 7. Create a new file in the _posts directory.  Every file represents a post.  Each file should take the format YYYY-MM-DD-<meaningful-name-without-spaces>.markdown.  As an example “2015-04-13-hello-world”
 
