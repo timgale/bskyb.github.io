@@ -2,7 +2,6 @@
 
 A developers portal, in the open.  For developers at Sky (past, present and future) and by developers at Sky.
 
-
 ## So, you want to write a blog post?
 
 Great!  You really should and it's easy to do. Don't get put off if you've never done this sort of thing before.
@@ -22,7 +21,9 @@ For those familiar with git and github pull requests, skip forward to installing
 
 * [Install Jekyll](http://jekyllrb.com/docs/installation/) if you want to preview your blog post. If you don’t want to preview, then don’t worry about Jekyll. On a machine with [RubyGems](https://rubygems.org/pages/download), it's super quick
 
-    gem install jekyll
+```
+gem install jekyll
+```
 
 * Run jekyll from within your cloned project
 
@@ -65,4 +66,3 @@ excerpt: "Sky are attending Google I/O - here's what we're planning to see any w
 ## A quick note on images
 
 Images can either be served from an external location (in which case, include the full url).  Alternatively, add them to the “images” directory.  They’ll then appear in images/<image name>
-
