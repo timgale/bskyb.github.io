@@ -16,7 +16,7 @@ For those that know how to use git and do pull requests, jump to step 5.
 
 1. Create a [github account](https://github.com/join) if you don't have one. Any standard github account will do, you don’t need special permissions
 
-2. Ensure you're running a (git client)[http://git-scm.com/downloads] then ensure (you've set it up)[https://help.github.com/articles/set-up-git/]
+2. Ensure you're running a [git client](http://git-scm.com/downloads) then ensure [you've set it up](https://help.github.com/articles/set-up-git/)
 
 3. Fork our repository.
 
@@ -55,7 +55,7 @@ image: images/test.png
 excerpt: "Sky are attending Google I/O - here's what we're planning to see any why"
 ---
 ```
-9. Write your awesome post using standard markup.  See the (examples)[] or (documentation)[http://jekyllrb.com/docs/posts/].  If you're running Jekyll, the site will automatically update on saving your post.
+9. Write your awesome post using standard markup.  See the [examples][] or [documentation](http://jekyllrb.com/docs/posts/).  If you're running Jekyll, the site will automatically update on saving your post.
 
 10. Add, commit and push your post
 
