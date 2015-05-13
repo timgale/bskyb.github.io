@@ -1,7 +1,8 @@
 # Site settings
 title: BSkyB
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://sky.uk" # the base hostname & protocol for your site
+url: "http://developers.sky.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+permalink: pretty
