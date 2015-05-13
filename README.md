@@ -10,7 +10,7 @@ Great!  You really should and it's easy to do. Don't get put off if you've never
 You'll need to do a little bit of work with github as our approval process uses the standard github pull request process.
 
 
-#### Steps to get started
+## Steps to get started
 
 For those that know how to use git and do pull requests, jump to step 5.
 
@@ -32,7 +32,7 @@ For those that know how to use git and do pull requests, jump to step 5.
 
 7. Create a new file in the _posts directory.  Every file represents a post.  Each file should take the format YYYY-MM-DD-<meaningful-name-without-spaces>.markdown.  As an example “2015-04-13-hello-world”
 
-8. Open the file and include the following header”
+8. Open the file and include the following header
 
 ```
 ---
@@ -44,10 +44,7 @@ image: a link to an image to be used
 excerpt: “An excerpt you want to appear in the blog summary screen”
 ---
 ```
-
-
 An example is as follows:-
-
 ```
 ---
 layout: post
@@ -58,7 +55,6 @@ image: images/test.png
 excerpt: "Sky are attending Google I/O - here's what we're planning to see any why"
 ---
 ```
-
 9. Write your awesome post using standard markup.  See the (examples)[] or (documentation)[http://jekyllrb.com/docs/posts/].  If you're running Jekyll, the site will automatically update on saving your post.
 
 10. Add, commit and push your post
