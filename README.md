@@ -18,9 +18,7 @@ For those familiar with git and github pull requests, skip forward to installing
 
 * Ensure you're running a [git client](http://git-scm.com/downloads) then ensure [you've set it up](https://help.github.com/articles/set-up-git/)
 
-* Fork our repository.
-
-* Clone your fork locally.
+* [Fork our repository and clone it to your machine](https://help.github.com/articles/fork-a-repo/).
 
 * [Install Jekyll](http://jekyllrb.com/docs/installation/) if you want to preview your blog post. If you don’t want to preview, then don’t worry about Jekyll. On a machine with [RubyGems](https://rubygems.org/pages/download), it's super quick
 
@@ -62,8 +60,7 @@ excerpt: "Sky are attending Google I/O - here's what we're planning to see any w
 
 * Add, commit and push your post
 
-* Create a pull request into master.
-
+* [Create a pull request into master](https://help.github.com/articles/using-pull-requests/).  Then wait for it to be merged.  It will automatically appear on developers.sky.com once merged.
 
 ## A quick note on images
 
