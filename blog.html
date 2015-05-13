@@ -3,14 +3,7 @@ layout: default
 title: Blog
 order: 1
 ---
-<div class="skycom-12">
-<div class="skycom-container clearfix">
-    <div class="alpha skycom-12">
-
-
-   <div class="container marketing">
-
-
+<div class="container marketing">
 {% for post in site.posts %}
     <hr class="featurette-divider">
       <div class="row featurette">
@@ -22,11 +15,6 @@ order: 1
           <img class="featurette-image img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
         </div>
       </div>
-
     {% endfor %}
-
       <hr class="featurette-divider">
-
-    </div><!-- /.container -->
-
-    </div></div></div>
+</div>
