@@ -56,7 +56,7 @@ excerpt: "Sky are attending Google I/O - here's what we're planning to see any w
 ---
 ```
 
-* Write your awesome post using standard markup.  See the [examples][https://github.com/BSkyB/bskyb.github.io/blob/master/_examples/2015-05-05-example-post.markdown] or [documentation](http://jekyllrb.com/docs/posts/).  If you're running Jekyll, the site will automatically update on saving your post.
+* Write your awesome post using standard markup.  See the [examples](https://github.com/BSkyB/bskyb.github.io/blob/master/_examples/2015-05-05-example-post.markdown) or [documentation](http://jekyllrb.com/docs/posts/).  If you're running Jekyll, the site will automatically update on saving your post.
 
 * Add, commit and push your post
 
