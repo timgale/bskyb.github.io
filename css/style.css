@@ -70,3 +70,20 @@ footer{
 .blog-post-info {
     font-size: 12px;
 }
+
+.github {
+    text-decoration: none;
+    color: #bbb;
+}
+
+.github .thumbnail :hover {
+    border-color:#337ab7;
+}
+
+.github .mega-octicon {
+    line-height: 22px;
+    margin-top: 10px;
+    vertical-align: middle;
+    margin-bottom: 0.25em;
+    margin-right: 5px;
+}
