@@ -3,34 +3,24 @@ layout: default
 title: Open Source
 order: 4
 ---
-<p>
-<h1></h1>
-    <div class="container">
-        <h3>Sky's developers are actively developing and contributing back</h3>
-            <p class="lead text--instructions">Here's an example of some of our OSS projects</p>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                        {% githublink author: skyglobal project: web-toolkit body:'Sky branded CSS, JavaScript utilities, and UI components' %}
-                </div>
-                <div class="col-xs-6 col-md-3">
-                        {% githublink author: BSkyB project: cezanne body:'Visual regression testing tool' %}
-                </div>
-                <div class="col-xs-6 col-md-3">
-                        {% githublink author: BSkyB project: colonel body:'Git backed content storage library for ruby' %}
-                </div>
-                <div class="col-xs-6 col-md-3">
-                        {% githublink author: BSkyB project: faber body:'Block based contents editor' %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                        {% githublink author: BSkyB project: aokay body:'Helps you to write tests which verify Omniture requests are made correctly' %}
-                </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                        {% githublink author: BSkyB project: bskyb.github.io body:'This awesome blog!' %}
-                </div>
+<div class="container">
+    <h3>Sky's developers are actively developing and contributing back</h3>
+
+    <p class="lead text--instructions">Here's an example of some of our OSS projects</p>
+    {% for project in site.data.projects %}
+    {% capture project_url %}//github.com/{{project.author}}/{{project.name}}{% endcapture %}
+    {% cycle '<div class="row">', '', '', '' %}
+
+        <div class="col-xs-6 col-md-3">
+            <div class="github thumbnail" onmouseover="this.style.borderColor = '#337ab7'"
+                 onmouseout="this.style.borderColor = ''">
+                <span class="mega-octicon octicon-repo"></span>
+                <a class="author" href="//github.com/{{project.author}}">{{project.author}}</a>
+                <span>/</span>
+                <a class="project" href="{{project_url}}">{{project.name}}</a>
+                <a class="project" href="{{project_url}}"><h4><i>{{project.description}}</i></h4></a>
             </div>
         </div>
-    </div>
-</p>
+        {% cycle '', '', '', '</div>' %}
+    {% endfor %}
+</div>

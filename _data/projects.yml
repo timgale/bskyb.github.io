@@ -1,0 +1,29 @@
+- name: web-toolkit
+  author: skyglobal
+  description: Sky branded CSS, JavaScript utilities, and UI components
+
+- name: cezanne
+  author: BSkyB
+  description: Visual regression testing tool
+
+
+- name: colonel
+  author: BSkyB
+  description: Git backed content storage library for ruby
+
+
+- name: faber
+  author: BSkyB
+  description: Block based contents editor
+
+
+- name: aokay
+  author: BSkyB
+  description: Helps you to write tests which verify Omniture requests are made correctly
+
+
+- name: bskyb.github.io
+  author: BSkyB
+  description: This awesome blog!
+
+
