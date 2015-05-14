@@ -13,13 +13,6 @@
             </div>
       </div>
         {% include footer.html %}
-        <script>
-       $('#main-nav-tabs').inPageNav();
-        </script>
-        <script>
-        var circlecontainer = $('.circlecontainer'),
-            image = circlecontainer.find('img');
-            circlecontainer.width(image.height());
-        </script>
+        {% include scripts.html %}
     </body>
 </html>
