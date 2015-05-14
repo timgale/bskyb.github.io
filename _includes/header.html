@@ -1,7 +1,6 @@
 <section class="module clearfix tabs-container page-nav whole-page" data-function="tabs" id='main-nav-tabs'>
   <ul class="tabs clearfix" role="tablist">
-    {% assign pages = site.pages | sort:"order" %}
-    {% for p in pages %}
+    {% for p in site.data.navigation %}
     {% if p.title %}
     {% if p.url == page.url %}
     <li id="{{p.title}}" class="tab selected" role="tab">
