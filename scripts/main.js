@@ -5,7 +5,3 @@ $(function () {
   image = circlecontainer.find('img');
   circlecontainer.width(image.height());
 });
-
-$(function () {
-$('#lightbox-demo-link').lightbox();
-});
