@@ -87,3 +87,7 @@ footer{
     margin-bottom: 0.25em;
     margin-right: 5px;
 }
+
+.spaced {
+    padding-top: 20px;
+}
