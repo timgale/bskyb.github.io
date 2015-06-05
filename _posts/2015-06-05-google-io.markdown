@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "Sky at Google I/O"
+date:   2015-06-05 14:33:00
+image: https://events.google.com/io2015/images/io15-color.png
+excerpt: "Summary of our experience at Google I/O"
+---
+<img src="/images/golden-gate-bridge.jpg" />
+<p>Last week I was lucky enough to attend Google I/O in San Francisco. In this post I will show you some of the best bits of my I/O experience.</p>
+<h2>Android</h2>
+While there were no major improvements to Android, Google announced a few long awaited bug fixes and interface improvements (most importantly the volume bar).
+<h3>Android M</h3>
+<p>The M Developer Preview will run from May 28 until the final Android M SDK, released sometime in Q3 2015. Unlike with L we can expect a few milestone updates to M as it nears completion.</p>
+<h3>Permissions</h3>
+<p>A shake up of the Android permission system will feature in M, this will allow the user to decide the permissions for an app after installation. For example say the user wants to record a voice message, the user will be asked for permission to use the microphone the first time the user uses this feature. Apps built upon earlier versions of android can still have their permissions disabled in the settings menu, so test your apps on Android M now.</p>
+<h3>App Links</h3>
+<p>Android already has a great Intent system, which is used to launch apps from other apps. Apps can also be launched from web links, currently if you select a web link the Android system will show you a context menu allowing you to choose which app to open the link with. M introduces App links which allows developers to associate an app with a web domain. Once the association has been made the platform can automatically determine the default app and can skip asking users.</p>
+<h3>Auto Backup for Apps</h3>
+<p>Auto backup will be enabled by default on all apps built for Android M. The data your app creates on a user device is preserved by uploading it to the user’s Google Drive account and encrypting it. Developers can include or exclude data from the backup system.</p>
+<h3>Now on tap</h3>
+<img src="/images/tomorrowland-final.png" /> <br />
+<p>Now on tap makes it easier for android users to get assistance. “With “Now on tap,” you can simply tap and hold the home button for assistance without having to leave what you’re doing—whether you’re in an app or on a website. For example, if a friend emails you about seeing the new movie Tomorrowland, you can invoke Google Now without leaving your app, to quickly see the ratings, watch a trailer, or even buy the movie on Sky Store - then get right back to what you were doing.“ All developers have to do to enable this feature is to set up App Indexing on the Google Play Console.</p>
+
+<h2>Design support library</h2>
+<p>Material design was launched last year with a lot of cool ui components, however it required developers to make them from scratch. Google has come to the rescue and created a design support library which contains a few ui components enabling developers to easily implement material design.</p>
+
+<p>The library contains
+<ul>
+  <li>Snackbar - like a toast but more material</li>
+  <li>FAB (Floating action button)</li>
+  <li>Floating labels for editing text</li>
+  <li>Navigation View - easy to use navigation drawer view</li>
+  <li>Coordinator layout</li>
+  <li>Tabs - easy material tab menu</li>
+  <li>Collapsing Toolbars</li>
+</ul>
+</p>
+
+<p>Find out more here</p>
+
+<h2>Developer Tools</h2>
+<p>The Android tools team have been very busy making it easier for developers to make great apps.</p>
+
+<p>Here are some of the new features coming in the new release:
+<ul>
+  <li>Vector images - no more pngs cluttering repos</li>
+  <li>Fast next generation Android Gradle Plugin</li>
+  <li>Additional support annotations</li>
+  <li>Performance profiling tools</li>
+  <li>UI editing tools</li>
+  <li>Support for C/C++</li>
+  <li>Data binding</li>
+  <li>And a lot more</li>
+</ul>
+</p>
+
+<h2>Cloud Test Lab</h2>
+<p>Cloud test lab is a new tool available to developers and testers soon, which will allow you to run your app on multiple devices in the cloud.</p>
+
+<p>The basic test lab will be available free, this will run a basic test of your app when you upload to the alpha or beta channel. The paid version of the test lab will allow you to run your automated espresso tests, support for additional testing tools such as appium or calabash will be supported soon.
+<br />
+<a href="https://developers.google.com/cloud-test-lab/" target="_blank">developers.google.com/cloud-test-lab</a></p>
+<h2>Cast and Android TV</h2>
+<p>The living room space in Android is a new and growing platform. The cast button has been clicked 1.5 Billion times! and Chromecast is used by the same amount of Android users as iOS users.</p>
+
+<p>Game screen mirroring support has been added to cast, which enables developers to make multi-player multiscreen games, all the rendering is done on the mobile device and sent to the cast device.</p>
+
+<h2>New Technology</h2>
+<h3>Brillo</h3>
+<p>Brillo is a Google’s IoT platform, based on the low levels of Android, it aims to connect a variety of IoT devices with a common interface called Weave.
+<br />
+<a href="https://developers.google.com/brillo/" target="_blank">developers.google.com/brillo</a>
+</p>
+<h3>Soli</h3>
+<p>Soli is a new way to interact with your devices using a small radar device that can detect small hand movements. Check out the video below.
+<br />
+<a href="https://www.youtube.com/watch?v=0QNiZfSsPc0" target="_blank">www.youtube.com/watch?v=0QNiZfSsPc0</a>
+</p>
+<h3>Jacquard</h3>
+<p>Jacquard aims to make wearables wearable, it turns fabrics a touch interface. Check out the video below.
+<br />
+<a href="https://www.google.com/atap/project-jacquard/" target="_blank">www.google.com/atap/project-jacquard</p>
+<p>
+ATAP Google I/O video - <a href="https://www.youtube.com/watch?v=mpbWQbkl8_g" target="_blank">www.youtube.com/watch?v=mpbWQbkl8_g</a> </p>
+<h2>References</h2>
+<ul>
+  <li>Videos - <a href="https://events.google.com/io2015/videos" target="_blank">events.google.com/io2015/videos</a></li>
+  <li>Android M - <a href="https://developer.android.com/preview/overview.html" target="_blank">developer.android.com/preview/overview.html</a></li>
+  <li>Google Play - <a href="http://android-developers.blogspot.co.uk/2015/05/empowering-successful-global-businesses.html" target="_blank">android-developers.blogspot.co.uk/2015/05/empowering-successful-global-businesses.html</a></li>
+  <li>Play Services - <a href="http://android-developers.blogspot.co.uk/2015/05/a-closer-look-at-google-play-services-75.html" target="_blank">android-developers.blogspot.co.uk/2015/05/a-closer-look-at-google-play-services-75.html</a></li>
+  <li>Design support library - <a href="http://android-developers.blogspot.co.at/2015/05/android-design-support-library.html" target="_blank">android-developers.blogspot.co.at/2015/05/android-design-support-library.html</a></li>
+</ul>
