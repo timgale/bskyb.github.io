@@ -9,7 +9,7 @@ excerpt: "excerpt"
 There are many different views on code style and how to maintain it, but the consensus in our team was that within reason, we should be able to take a piece of code and not be able to identify who wrote it. These are the tools and practices we use to try and achieve this.
 
 ### ESLint
-ESLint is nice because it removes the need for multiple tools when checking Javascript code. Previously, we used JSLint to evaluate against rules to help us follow best practices amongst other things, and Javascript Code Style Checker (JSCS) to help us enforce specific code style rules. ESLint combines these two tools, it has a very extensive set of rules that's split into several categories including possible errors, best practices that should be followed and stylistic issues that can be set depending on your team's choices. Besides combining multiple tools for checking the same thing, one of the key benefits of using ESLint is the fact that it allows custom rules to be written. It was designed to use pluggable rulesets that can be added or removed as needed, and given the fact that is uses the NPM infrastructure, it's easy to download community created rulesets and even create your own.
+ESLint is nice because it removes the need for multiple tools when checking Javascript code. Previously, we used JSHint to evaluate against rules to help us follow best practices amongst other things, and Javascript Code Style Checker (JSCS) to help us enforce specific code style rules. ESLint combines these two tools, it has a very extensive set of rules that's split into several categories including possible errors, best practices that should be followed and stylistic issues that can be set depending on your team's choices. Besides combining multiple tools for checking the same thing, one of the key benefits of using ESLint is the fact that it allows custom rules to be written. It was designed to use pluggable rulesets that can be added or removed as needed, and given the fact that is uses the NPM infrastructure, it's easy to download community created rulesets and even create your own.
 
 ### SCSSLint
 As front end developers, keeping our SCSS stylesheets consistent and at a high quality is equally important as keeping our Javascript code in order. We use SCSS-Lint which allows us to ensure consistency through our SCSS files by enforcing stylistic rules chosen by us. SCSS-Lint has more focus on stylistic choices than potential bad practices likes ESLint offers, but still has a large ruleset that's become essential for our team's development.
@@ -22,6 +22,10 @@ One of the final practices we follow is merging all feature code to our codebase
 
 ### References
 [https://github.com/eslint/eslint](https://github.com/eslint/eslint)
+
+[http://jscs.info/](http://jscs.info/)
+
+[https://github.com/jshint/jshint](https://github.com/jshint/jshint)
 
 [https://github.com/brigade/scss-lint](https://github.com/brigade/scss-lint)
 
