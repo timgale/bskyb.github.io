@@ -42,6 +42,15 @@ footer{
     margin: 10px 0 0 20px;
 }
 
+.dev-logo {
+    font-size: 34px;
+}
+
+.dev-logo-text {
+    color: #606060;
+    margin-left: -2px;
+}
+
 .left {
     float: left;
 }
