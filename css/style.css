@@ -43,7 +43,7 @@ footer{
 }
 
 .dev-logo {
-    font-size: 34px;
+    font-size: 30px;
 }
 
 .dev-logo-text {
@@ -99,4 +99,12 @@ footer{
 
 .spaced {
     padding-top: 20px;
+}
+
+.hero-vid {
+    margin: -8vw 0;
+}
+
+.hero {
+    margin-top: 20px;
 }
