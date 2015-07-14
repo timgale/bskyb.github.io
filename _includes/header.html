@@ -1,5 +1,14 @@
 <section class="module clearfix tabs-container page-nav whole-page" data-function="tabs" id='main-nav-tabs'>
   <ul class="tabs clearfix" role="tablist">
+    <li class="tab" role="tab">
+      <a class="internal-link dev-logo" href="/">
+        <img src="/images/logo-positive.svg" height="35"/>
+        <span class="dev-logo-text">
+        developers
+        </span>
+      </a>
+    </li>
+
     {% for p in site.data.navigation %}
     {% if p.title %}
     {% if p.url == page.url %}

@@ -42,6 +42,15 @@ footer{
     margin: 10px 0 0 20px;
 }
 
+.dev-logo {
+    font-size: 30px;
+}
+
+.dev-logo-text {
+    color: #606060;
+    margin-left: -2px;
+}
+
 .left {
     float: left;
 }
@@ -90,4 +99,12 @@ footer{
 
 .spaced {
     padding-top: 20px;
+}
+
+.hero-vid {
+    margin: -8vw 0;
+}
+
+.hero {
+    margin-top: 20px;
 }
