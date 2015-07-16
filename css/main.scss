@@ -39,7 +39,7 @@ body {
   font: 16px/20px SkyTextRegular, Helvetica, Arial, sans-serif;
   color: #333333; }
 
-
+@import 'header';
 
 .blog-header {
 	h1 {
@@ -154,8 +154,4 @@ iframe {
 .github-thumbnail {
   padding: 10px;
   outline: 1px solid #cbcbcb;
-}
-
-.dev-logo {
-  height: 44px;
 }
