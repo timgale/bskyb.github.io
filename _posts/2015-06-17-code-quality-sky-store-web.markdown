@@ -3,7 +3,7 @@ layout: post
 title: "Maintaining code quality in Sky Store web"
 date: 2015-06-17
 categories: coding
-excerpt: "excerpt"
+excerpt: "A summary of the tools and practices we use to try and achieve code quality in Sky Store Web."
 ---
 
 There are many different views on code style and how to maintain it, but the consensus in our team was that within reason, we should be able to take a piece of code and not be able to identify who wrote it. These are the tools and practices we use to try and achieve this.
