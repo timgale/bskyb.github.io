@@ -2,24 +2,20 @@
 layout: default
 title: Open Source
 ---
-<div class="container">
-    <h3>Sky's developers are actively developing and contributing back</h3>
+    <h3>We're contributing back to the open source community</h3>
 
-    <p class="lead text--instructions">Here's an example of some of our OSS projects</p>
+    <p class="lead text--instructions">Our open source projects</p>
     {% for project in site.data.projects %}
     {% capture project_url %}//github.com/{{project.author}}/{{project.name}}{% endcapture %}
-    {% cycle '<div class="row">', '', '', '' %}
-
-        <div class="col-xs-6 col-md-3">
-            <div class="github thumbnail" onmouseover="this.style.borderColor = '#337ab7'"
-                 onmouseout="this.style.borderColor = ''">
+      {% cycle '<ul class="github clearfix">', '', '', '' %}
+        <li class="skycom-3">
+            <div class="github-thumbnail">
                 <span class="mega-octicon octicon-repo"></span>
                 <a class="author" href="//github.com/{{project.author}}">{{project.author}}</a>
                 <span>/</span>
                 <a class="project" href="{{project_url}}">{{project.name}}</a>
                 <a class="project" href="{{project_url}}"><h4><i>{{project.description}}</i></h4></a>
             </div>
-        </div>
-        {% cycle '', '', '', '</div>' %}
+        </li>
+        {% cycle '', '', '', '</ul>' %}
     {% endfor %}
-</div>
