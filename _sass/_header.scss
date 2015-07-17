@@ -1,15 +1,189 @@
+body {
+	padding-top: 45px;
+
+	@include tablet {
+		padding-top: 0;
+	}
+}
+
 .dev-logo {
-  font-size: 30px;
+  font-size: 20px;
+  float: left;
+  margin: 0 3%;
+  line-height: 45px;
+
+  @include tablet {
+	margin: 19px 30px 0 0;
+	font-size: 30px;
+
+  }
+
+  a {
+  	display:block;
+  	text-decoration: none;
+  	line-height: 45px;
+
+	&:hover {
+		border-bottom: 2px solid #0073c5;
+  		color: #0070a5;
+  		margin-bottom:-2px;
+
+	}
+  }
+}
+
+.menu_button {
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	display: block;
+	right: 0;
+	top:0;
+	cursor: pointer;
+	line-height: 46px;
+	text-align: center;
+	font-size: 30px;
+
+	i {
+		display: block;
+		font-size: 15px;
+	}
+
+	@include tablet {
+		display: none !important;
+	}
+}
+
+#menu_toggle {
+	display: none;
+
+}
+
+#menu_toggle:checked + .menu_overlay {
+	display: block !important;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#menu_toggle:checked + .menu_overlay + ul.main-menu {
+	@include mobile {
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(00%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+}
+
+.menu_overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 45px;
+	display: block;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.8);
+	-webkit-transition: all 0.2s ease-out;
+	pointer-events: none;
+
+	@include tablet {
+		opacity: 0;
+	}
 }
 
 .dev-logo-image {
-  vertical-align: middle;  
+	@include mobile {
+		height: 25px;
+	}
+  	vertical-align: middle;  
 }
 
 .dev-logo-text {
   color: #606060;
   margin-left: -2px;
 }
+
+
+
+.tabs-container.page-nav {
+
+	z-index:99;
+	border-bottom: solid 1px #dcdcdc;
+
+	@include mobile {
+		background: white;
+		border-bottom: solid 1px #dcdcdc;
+		position: fixed;
+		top:0;
+		width:100%;
+		margin: 0 -2.970295%;
+		box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	}
+
+
+	.tabs.main-menu {
+		float: left;	
+		-webkit-transition: all 0.2s ease-out;
+		margin-bottom: 0;
+		border-bottom: none;
+
+		@include mobile {
+			padding-right: 0;
+			float: right;
+			background: white;
+			display: block;
+			position: fixed;
+			right: 0;
+			top: 45px;
+			margin-top: 0;
+			border-bottom: none;
+			margin-bottom: 0;
+			z-index: 999;
+			height: 100%;
+			overflow: hidden;
+			border-top: 1px solid #dcdcdc;
+
+
+	  		-webkit-transform: translateX(100%);
+	  		-moz-transform: translateX(100%);
+	  		-ms-transform: translateX(100%);
+	  		-o-transform: translateX(100%);
+	  		transform: translateX(100%);
+
+
+		}
+
+		
+
+		li {
+			@include mobile {
+				float: none !important;
+				padding: 0 !important;
+				width: auto !important;
+				height: auto;
+			}
+			
+			a {
+				@include mobile {
+					padding: 10px 20px;
+					border-bottom: 1px solid #dcdcdc !important;
+					display: block;
+				}
+			}
+
+			&.selected a {
+				border: none !important;
+				color: white;
+				background: #0073c5;
+
+			}
+
+		}
+
+	}
+
+}
+
 
 .hero-vid {
   margin: -8vw 0;

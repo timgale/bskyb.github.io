@@ -1,13 +1,17 @@
 <section class="module clearfix tabs-container page-nav whole-page" data-function="tabs" id='main-nav-tabs'>
-  <ul class="tabs clearfix" role="tablist">
-    <li class="tab" role="tab">
-      <a class="internal-link dev-logo" href="/">
+  <h1 class="dev-logo">
+      <a class="internal-link" href="/">
         <img src="/images/logo-positive.svg" height="35" class="dev-logo-image"/>
         <span class="dev-logo-text">
         developers
         </span>
       </a>
-    </li>
+  </h1>
+
+  <label for="menu_toggle" class="menu_button"><i class="skyicon-menu" aria-hidden="true"></i></label>
+  <input type="checkbox" id="menu_toggle"/>
+  <label class="menu_overlay" for="menu_toggle"></label>
+  <ul class="tabs clearfix main-menu" role="tablist">
 
     {% for p in site.data.navigation %}
     {% if p.title %}
