@@ -4,7 +4,7 @@ title:  5 Things I Learnt at Scaladays 2015
 date:   2015-07-05 10:00:00
 author: Hubert Behaghel
 categories: conferences scala
-image: http://blog.takipi.com/wp-content/uploads/2015/06/Scala-Days-Amsterdam.jpg
+image: /images/Scala-Days-Amsterdam.jpg
 excerpt: This year again, Scaladays was a blast. It took place in Amsterdam between 8th and 10th June. I was there and here is what I brought back.
 ---
 
