@@ -58,9 +58,11 @@ body {
 }
 
 #menu_toggle:checked + .menu_overlay {
-    display: block !important;
-    opacity: 1;
-    pointer-events: auto;
+    @include mobile {
+        display: block !important;
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 #menu_toggle:checked + .menu_overlay + ul.main-menu {
@@ -164,9 +166,12 @@ body {
             }
 
             &.selected a {
-                border: none !important;
-                color: white;
-                background: #0073c5;
+
+                @include mobile {
+                    border: none !important;
+                    color: white;
+                    background: #0073c5;
+                }
             }
         }
     }
