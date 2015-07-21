@@ -1,0 +1,24 @@
+$tablet-width: 1023px;
+$mobile-width: 767px;
+
+
+/* 1.2 Mixins
+--------------------------------------------------------------------------*/
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$mobile-width + 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
