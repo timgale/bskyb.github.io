@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Narrate: Innovation in Storytelling"
+author: "George Richmond, Principal Engineer"
+date: 2015-07-22 13:36:00
+categories: javascript, react
+image: /images/london-bombing.jpg
+---
+
+
 This July, Sky News delivered a [superb interactive narrative](http://narrate.news.sky.com/london7-7) of the terror attacks on London on July 7, 2005. The end product was very different to anything that we had delivered before, and was built using innovative new technology and ways of working in a very short time.
 
 We wanted to create something that would deliver a compelling and easy to navigate overview of the story but let the extraordinary video content speak for itself. We also wanted what we built to go on to tell future stories and so we developed ‘Narrate’ - a reusable, fast, beautifully designed and mobile-optimised storytelling framework.
