@@ -3,7 +3,6 @@ layout: post
 title: "Narrate: Innovation in Storytelling"
 author: "George Richmond, Principal Engineer"
 date: 2015-07-22 13:36:00
-categories: javascript, react
 image: /images/london-bombing.jpg
 ---
 
