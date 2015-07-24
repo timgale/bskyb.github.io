@@ -11,7 +11,7 @@ This July, Sky News delivered a [superb interactive narrative](http://narrate.ne
 
 We wanted to create something that would deliver a compelling and easy to navigate overview of the story but let the extraordinary video content speak for itself. We also wanted what we built to go on to tell future stories and so we developed ‘Narrate’ - a reusable, fast, beautifully designed and mobile-optimised storytelling framework.
 
-Close collaboration between editors, producers developers and the product owner was critical to creating the best possible experience in the shortest time. We co-located where possible and held regular stand-up meetings to discuss progress and outstanding issues. We set up a dedicated channel in our Slack team, enabling us to instantly share and discuss ideas and designs from our smartphones or workstations, wherever we were located.
+Close collaboration between editors, producers, developers and the product owner was critical to creating the best possible experience in the shortest time. We co-located where possible and held regular stand-up meetings to discuss progress and outstanding issues. We set up a dedicated channel in our Slack team, enabling us to instantly share and discuss ideas and designs from our smartphones or workstations, wherever we were located.
 
 Our designers were able to create realistic interactive prototypes from visual designs in minutes using [InVision](http://www.invisionapp.com), enabling everyone to interact with the prototype right from our smartphones, exactly as our users would. We also tested these interactive prototypes on users with [UserTesting.com](http://www.usertesting.com), recording the user interactions and verbal commentary as a video, providing valuable feedback for our designers.
 
