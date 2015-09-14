@@ -5,21 +5,21 @@ date:   2015-09-19 11:36:00
 author: "Paul Thornton (Delivery Manager - Sky Identity)"
 categories: hackday
 image: /images/identity/hackteams.jpeg
-excerpt: "For those you aren't aware, Sky Identity is the delivery area behind Sky's authentication services,
-comprising of four Scrum Teams (Sky iD, Oogway, Rango, Europa) we also have a dedicated security and DevOps teams.
-As such we have a wealth of talent which was recently put on display during our hackday.  Find out what we got up to..."
+excerpt: "For those who aren't aware, Sky Identity is the delivery area behind Sky's authentication services,
+comprising of four Scrum Teams (Sky iD, Oogway, Rango, Europa), and a dedicated security (i3) and DevOps teams.
+As such, the wealth of talent was recently put on display during at our internal hackday.  Find out what we got up to..."
 ---
 
 <h1>About the event</h1>
 
 First off, thanks to all those who assisted with the preparation and who contributed to Identity’s hackday,
 it was good to see so many involved and some interesting ideas progressed.
-Special thanks to Rob McRitchie and Satnam Suman to help organise and to John Mullen and Simon Cantlon for assisting with the judging.
+Special thanks to Rob McRitchie and Satnam Suman to help organise, and to Jon Mullen and Simon Cantlon for assisting with the judging.
 
 <img src="/images/identity/hackteams.jpeg" width="100%">
 
 <h3>Winner</h3>
-The winner was <strong>Team Skyfall</strong> (Bulut Korkmaz and Sanjida Gafur) who produced the <strong>“Multi-lingual Sky iD Admin Widget with Content Management using a graph database)”</strong>
+The winner was <strong>Team Skyfall</strong> (Bulut Korkmaz and Sanjida Gafur) who produced the <strong>“Multi-lingual Sky iD Admin Widget with Content Management (using a graph database)”</strong>
 with added special effects!!  It allows administrators to update the text and order of fields that the widget renders, in a friendly/innovative manner.
 
 The front-end was built on Sky iD's current technology stack, leveraging HTML5, JavaScript, CSS3, and AngularJS.
@@ -42,7 +42,7 @@ Your browser does not support the video tag.
 
 
 <h3>Second Place</h3>
-In second was <strong>Team Teflon</strong> (Adam Niklaus, Juan Vaccari, Vinit More, Dawid Sawa, Patric Hogan) with <strong>"Hardening of Sign-in"</strong>, they introduced a innovated way of
+In second was <strong>Team Teflon</strong> (Adam Niklaus, Juan Vaccari, Vinit More, Dawid Sawa, Patric Hogan) with <strong>"Hardening of Sign-in"</strong>, they introduced an innovated way of
 improving the security on the sign-in journey, with minimal (if not any) impact
 to the customer, but with a great benefit - effectively invalidating most, if not all, existing malicious scripts.
 
