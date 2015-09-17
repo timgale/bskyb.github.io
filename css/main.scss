@@ -153,8 +153,8 @@ article {
     }
 
     iframe {
-        
-        border: none; 
+
+        border: none;
 
         @include mobile {
             border: 0;
@@ -205,3 +205,23 @@ article {
 	  }
 }
 
+@media(max-width: 768px) {
+  .post .post-content img{
+      width: 100%;
+  }
+}
+
+.github .skycom-3 {
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px){
+    .github {
+        margin-bottom: 0px;
+    }
+}
+
+.github-thumbnail h4 i{
+    overflow: visible !important;
+
+}
