@@ -2,7 +2,9 @@
 title: BSkyB
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://developers.sky.com" # the base hostname & protocol for your site
+safe: false
 
 # Build settings
+highlighter: true
 markdown: kramdown
 permalink: pretty
