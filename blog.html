@@ -15,29 +15,39 @@ title: Blog
 {% endfor %}
 
 {% if isInternal == true %}
-    {% for post in site.posts %}
-      <div class="row clearfix">
-        <div class="skycom-7">
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p class="lead">{{ post.excerpt }}</p>
+  {% assign internalSize = site.posts | size %}
+    {% if internalSize == 0 %}
+      <p>No posts to display</p>
+    {% else %}
+      {% for post in site.posts %}
+        <div class="row clearfix">
+          <div class="skycom-7">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="lead">{{ post.excerpt }}</p>
+          </div>
+          <div class="skycom-5">
+            <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
+          </div>
         </div>
-        <div class="skycom-5">
-          <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
-        </div>
-      </div>
-      <hr class="featurette-divider">
-    {% endfor %}
+        <hr class="featurette-divider">
+      {% endfor %}
+    {% endif %}
   {% else %}
-    {% for post in site.categories.external %}
-      <div class="row clearfix">
-        <div class="skycom-7">
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p class="lead">{{ post.excerpt }}</p>
+    {% assign externalSize = site.categories.external | size %}
+    {% if externalSize == 0 %}
+      <p>No posts to display</p>
+    {% else %}
+      {% for post in site.categories.external %}
+        <div class="row clearfix">
+          <div class="skycom-7">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="lead">{{ post.excerpt }}</p>
+          </div>
+          <div class="skycom-5">
+            <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
+          </div>
         </div>
-        <div class="skycom-5">
-          <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
-        </div>
-      </div>
-      <hr class="featurette-divider">
-    {% endfor %}
+        <hr class="featurette-divider">
+      {% endfor %}
+    {% endif %}
   {% endif %}
