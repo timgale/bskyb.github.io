@@ -2,6 +2,20 @@
 layout: default
 title: Open Source
 ---
+
+<!-- Get the IP address and check against the IP range for internal/external -->
+{% capture remoteIp %}{% remote_ip %}{% endcapture %}
+{% capture ipRange %}{% ip_range %}{% endcapture %}
+{% assign ipRangeList = ipRange | split:"," %}
+{% assign isInternal = false %}
+
+{% for ip in ipRangeList %}
+  {% if remoteIp contains ip %}
+    {% assign isInternal = true %}
+  {% endif %}   
+{% endfor %}
+
+{% if isInternal == true %}
     <h3>We're contributing back to the open source community</h3>
 
     <p class="lead text--instructions">Our open source projects</p>
@@ -19,3 +33,4 @@ title: Open Source
         </li>
         {% cycle '', '', '', '</ul>' %}
     {% endfor %}
+{% endif %}

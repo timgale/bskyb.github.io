@@ -2,15 +2,57 @@
 layout: default
 title: Blog
 ---
-{% for post in site.posts %}
-  <div class="row clearfix">
-    <div class="skycom-7">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="lead">{{ post.excerpt }}</p>
-    </div>
-    <div class="skycom-5">
-      <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
-    </div>
-  </div>
-  <hr class="featurette-divider">
+
+<!-- Get the IP address and check against the IP range for internal/external -->
+{% capture remoteIp %}{% remote_ip %}{% endcapture %}
+{% capture ipRange %}{% ip_range %}{% endcapture %}
+{% assign ipRangeList = ipRange | split:"," %}
+{% assign isInternal = false %}
+
+{% for ip in ipRangeList %}
+  {% if remoteIp contains ip %}
+    {% assign isInternal = true %}
+  {% endif %}   
 {% endfor %}
+
+{% if isInternal == true %}
+  <!-- Get number of posts. If 0, show that there are no posts available -->
+  {% assign internalSize = site.posts | size %}
+    {% if internalSize == 0 %}
+      <p>No posts to display</p>
+    {% else %}
+      <!-- Read all posts in site, including those in external folder -->  
+      {% for post in site.posts %}
+        <div class="row clearfix">
+          <div class="skycom-7">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="lead">{{ post.excerpt }}</p>
+          </div>
+          <div class="skycom-5">
+            <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    <!-- Get number of posts. If 0, show that there are no posts available -->
+    {% assign externalSize = site.categories.external | size %}
+    {% if externalSize == 0 %}
+      <p>No posts to display</p>
+    {% else %}
+      <!-- Read only those posts in external folder -->  
+      {% for post in site.categories.external %}
+        <div class="row clearfix">
+          <div class="skycom-7">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="lead">{{ post.excerpt }}</p>
+          </div>
+          <div class="skycom-5">
+            <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      {% endfor %}
+    {% endif %}
+  {% endif %}
