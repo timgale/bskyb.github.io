@@ -192,3 +192,16 @@ article {
     padding: 10px;
     outline: 1px solid #cbcbcb;
 }
+
+.meetup-event{
+	.published-date {
+	    font-size: 14px;
+	}
+	  ol, ul {
+	    margin: 1em;
+	  }
+	  li {
+	    list-style-type: disc;
+	  }
+}
+
