@@ -3,6 +3,7 @@ layout: default
 title: Blog
 ---
 
+<!-- Get the IP address and check against the IP range for internal/external -->
 {% capture remoteIp %}{% remote_ip %}{% endcapture %}
 {% capture ipRange %}{% ip_range %}{% endcapture %}
 {% assign ipRangeList = ipRange | split:"," %}
@@ -15,10 +16,12 @@ title: Blog
 {% endfor %}
 
 {% if isInternal == true %}
+  <!-- Get number of posts. If 0, show that there are no posts available -->
   {% assign internalSize = site.posts | size %}
     {% if internalSize == 0 %}
       <p>No posts to display</p>
     {% else %}
+      <!-- Read all posts in site, including those in external folder -->  
       {% for post in site.posts %}
         <div class="row clearfix">
           <div class="skycom-7">
@@ -33,10 +36,12 @@ title: Blog
       {% endfor %}
     {% endif %}
   {% else %}
+    <!-- Get number of posts. If 0, show that there are no posts available -->
     {% assign externalSize = site.categories.external | size %}
     {% if externalSize == 0 %}
       <p>No posts to display</p>
     {% else %}
+      <!-- Read only those posts in external folder -->  
       {% for post in site.categories.external %}
         <div class="row clearfix">
           <div class="skycom-7">

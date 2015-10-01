@@ -9,7 +9,7 @@ module Jekyll
     end
 
     def remote_ip
-      # @remote_ip ||= Socket.ip_address_list.find { |ai| ai.ipv4? && !ai.ipv4_loopback? }.ip_address.to_s()
+      # Get the Public IP address
       @remote_ip ||= Net::HTTP.get(URI("https://api.ipify.org"))
 	end
 
@@ -26,8 +26,11 @@ module Jekyll
     end
 
     def render(context)
-       "90.216.134,90.216.150"
-       #"90.216.135,90.216.150"
+       # Sky IP Range 
+       "90.216.134,90.216.150" 
+
+       # Testing range for use on internal network
+       # "90.216.135,90.216.151"
     end
   end
 

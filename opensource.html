@@ -3,6 +3,7 @@ layout: default
 title: Open Source
 ---
 
+<!-- Get the IP address and check against the IP range for internal/external -->
 {% capture remoteIp %}{% remote_ip %}{% endcapture %}
 {% capture ipRange %}{% ip_range %}{% endcapture %}
 {% assign ipRangeList = ipRange | split:"," %}

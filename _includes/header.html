@@ -1,3 +1,4 @@
+<!-- Get the IP address and check against the IP range for internal/external -->
 {% capture remoteIp %}{% remote_ip %}{% endcapture %}
 {% capture ipRange %}{% ip_range %}{% endcapture %}
 {% assign ipRangeList = ipRange | split:"," %}
@@ -35,6 +36,7 @@
           <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
           </li>
         {% else %}
+          <!-- If External, do not show 'Open Source' link (temporary) -->
           {% if p.title != "Open Source" %}
             {% if p.url == page.url %}
               <li id="{{p.title}}" class="tab selected" role="tab">
