@@ -53,29 +53,6 @@ body {
     }
 }
 
-// #menu_toggle {
-//     display: none;
-// }
-
-// #menu_toggle:checked + .menu_overlay {
-//     @include mobile {
-//         display: block !important;
-//         opacity: 1;
-//         pointer-events: auto;
-//     }
-// }
-
-// #menu_toggle:checked + .menu_overlay + ul.main-menu {
-//
-//     @include mobile {
-//         -webkit-transform: translateX(0%);
-//         -moz-transform: translateX(0%);
-//         -ms-transform: translateX(0%);
-//         -o-transform: translateX(0%);
-//         transform: translateX(0%);
-//     }
-// }
-
 .menu_overlay {
     position: fixed;
     width: 100%;

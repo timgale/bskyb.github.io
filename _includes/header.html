@@ -8,9 +8,9 @@
       </a>
   </h1>
 
-  <label class="menu_button"><i class="skyicon-menu" aria-hidden="true"></i></label>
-  <label class="menu_overlay" for="menu_toggle"></label>
-  <ul class="tabs clearfix main-menu" role="tablist">
+  <label class="menu_button" id="menu_button"><i class="skyicon-menu" aria-hidden="true"></i></label>
+  <label class="menu_overlay" id="menu_overlay" for="menu_toggle"></label>
+  <ul id="main-menu" class="tabs clearfix main-menu" role="tablist">
 
     {% for p in site.data.navigation %}
     {% if p.title %}
@@ -26,15 +26,14 @@
   </ul>
 </section>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
-    $('.menu_button').click(function() {
-        $('ul.main-menu').toggleClass('active');
-        $('.menu_overlay').toggleClass('active');
+    document.getElementById('menu_button').addEventListener('click', function() {
+        document.getElementById('main-menu').classList.toggle('active');
+        document.getElementById('menu_overlay').classList.toggle('active');
     });
 
-    $('.menu_overlay').click(function() {
-        $('ul.main-menu').removeClass('active');
-        $('.menu_overlay').removeClass('active');
+    document.getElementById('menu_overlay').addEventListener('click', function() {
+        document.getElementById('main-menu').classList.remove('active');
+        document.getElementById('menu_overlay').classList.remove('active');
     });
 </script>
