@@ -2,15 +2,52 @@
 layout: default
 title: Blog
 ---
-{% for post in site.posts %}
-  <div class="row clearfix">
-    <div class="skycom-7">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="lead">{{ post.excerpt }}</p>
-    </div>
-    <div class="skycom-5">
-      <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
-    </div>
-  </div>
-  <hr class="featurette-divider">
+
+{% capture remoteIp %}{% remote_ip %}{% endcapture %}
+{% capture ipRange %}{% ip_range %}{% endcapture %}
+{% assign ipRangeList = ipRange | split:"," %}
+{% assign isInternal = false %}
+
+{% for ip in ipRangeList %}
+  {% if remoteIp contains ip %}
+    {% assign isInternal = true %}
+  {% endif %}   
 {% endfor %}
+
+{% if isInternal == true %}
+  {% assign internalSize = site.posts | size %}
+    {% if internalSize == 0 %}
+      <p>No posts to display</p>
+    {% else %}
+      {% for post in site.posts %}
+        <div class="row clearfix">
+          <div class="skycom-7">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="lead">{{ post.excerpt }}</p>
+          </div>
+          <div class="skycom-5">
+            <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    {% assign externalSize = site.categories.external | size %}
+    {% if externalSize == 0 %}
+      <p>No posts to display</p>
+    {% else %}
+      {% for post in site.categories.external %}
+        <div class="row clearfix">
+          <div class="skycom-7">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="lead">{{ post.excerpt }}</p>
+          </div>
+          <div class="skycom-5">
+            <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      {% endfor %}
+    {% endif %}
+  {% endif %}
