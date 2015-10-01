@@ -22,8 +22,8 @@
   description: Helps you to write tests which verify Omniture requests are made correctly
 
 
-# - name: bskyb.github.io
-#   author: BSkyB
-#   description: This awesome blog!
+- name: bskyb.github.io
+  author: BSkyB
+  description: This awesome blog!
 
 
