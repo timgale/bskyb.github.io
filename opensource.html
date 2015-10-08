@@ -3,34 +3,20 @@ layout: default
 title: Open Source
 ---
 
-<!-- Get the IP address and check against the IP range for internal/external -->
-{% capture remoteIp %}{% remote_ip %}{% endcapture %}
-{% capture ipRange %}{% ip_range %}{% endcapture %}
-{% assign ipRangeList = ipRange | split:"," %}
-{% assign isInternal = false %}
+<h3>We're contributing back to the open source community</h3>
 
-{% for ip in ipRangeList %}
-  {% if remoteIp contains ip %}
-    {% assign isInternal = true %}
-  {% endif %}   
-{% endfor %}
-
-{% if isInternal == true %}
-    <h3>We're contributing back to the open source community</h3>
-
-    <p class="lead text--instructions">Our open source projects</p>
-    {% for project in site.data.projects %}
+<p class="lead text--instructions">Our open source projects</p>
+{% for project in site.data.projects %}
     {% capture project_url %}//github.com/{{project.author}}/{{project.name}}{% endcapture %}
-      {% cycle '<ul class="github clearfix">', '', '', '' %}
-        <li class="skycom-3">
-            <div class="github-thumbnail">
-                <span class="mega-octicon octicon-repo"></span>
-                <a class="author" href="//github.com/{{project.author}}">{{project.author}}</a>
-                <span>/</span>
-                <a class="project" href="{{project_url}}">{{project.name}}</a>
-                <a class="project" href="{{project_url}}"><h4><i>{{project.description}}</i></h4></a>
-            </div>
-        </li>
-        {% cycle '', '', '', '</ul>' %}
-    {% endfor %}
-{% endif %}
+    {% cycle '<ul class="github clearfix">', '', '', '' %}
+    <li class="skycom-3">
+        <div class="github-thumbnail">
+            <span class="mega-octicon octicon-repo"></span>
+            <a class="author" href="//github.com/{{project.author}}">{{project.author}}</a>
+            <span>/</span>
+            <a class="project" href="{{project_url}}">{{project.name}}</a>
+            <a class="project" href="{{project_url}}"><h4><i>{{project.description}}</i></h4></a>
+        </div>
+    </li>
+    {% cycle '', '', '', '</ul>' %}
+{% endfor %}

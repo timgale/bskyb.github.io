@@ -1,15 +1,3 @@
-<!-- Get the IP address and check against the IP range for internal/external -->
-{% capture remoteIp %}{% remote_ip %}{% endcapture %}
-{% capture ipRange %}{% ip_range %}{% endcapture %}
-{% assign ipRangeList = ipRange | split:"," %}
-{% assign isInternal = false %}
-
-{% for ip in ipRangeList %}
-  {% if remoteIp contains ip %}
-    {% assign isInternal = true %}
-  {% endif %}   
-{% endfor %}
-
 <section class="module clearfix tabs-container page-nav whole-page" data-function="tabs" id='main-nav-tabs'>
   <h1 class="dev-logo">
       <a class="internal-link" href="/">
@@ -27,25 +15,14 @@
 
     {% for p in site.data.navigation %}
       {% if p.title %}
-        {% if isInternal == true %}
+        {% if p.title != "Open Source" %}
           {% if p.url == page.url %}
             <li id="{{p.title}}" class="tab selected" role="tab">
           {% else %}
             <li id="{{p.title}}" class="tab" role="tab">
           {% endif %}
-          <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
+            <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
           </li>
-        {% else %}
-          <!-- If External, do not show 'Open Source' link (temporary) -->
-          {% if p.title != "Open Source" %}
-            {% if p.url == page.url %}
-              <li id="{{p.title}}" class="tab selected" role="tab">
-            {% else %}
-              <li id="{{p.title}}" class="tab" role="tab">
-            {% endif %}
-              <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
-            </li>
-          {% endif %}
         {% endif %}
       {% endif %}
     {% endfor %}
