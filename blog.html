@@ -1,27 +1,27 @@
----
-layout: default
-title: Index
----
+--- layout: default title: Index ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-$.get("http://ipinfo.io", function (response) {
-   clientIP = response.ip;
-   if(clientIP.substring(0,11) == "90.216.134."){
+$.ajax({
+  type: "GET",
+  url: "https://api.ipify.org?format=json",
+  contentType: 'application/json',
+  success: function(response){
+    var clientIP = response.ip;
+    if(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1) {
       window.location = "/internalHtml"
-   }
-}, "jsonp");
-</script>
+    }
+  }
+});
 </script>
 <h3>Latest Posts</h3>
 {% for post in site.categories.external %}
-  <div class="row clearfix">
-    <div class="skycom-7">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="lead">{{ post.excerpt }}</p>
-    </div>
-    <div class="skycom-5">
-      <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
-    </div>
+<div class="row clearfix">
+  <div class="skycom-7">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="lead">{{ post.excerpt }}</p>
   </div>
-  <hr class="featurette-divider">
-{% endfor %}
+  <div class="skycom-5">
+    <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
+  </div>
+</div>
+<hr class="featurette-divider"> {% endfor %}

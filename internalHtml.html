@@ -4,12 +4,17 @@ title: Blog
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-$.get("http://ipinfo.io", function (response) {
-   clientIP = response.ip;
-   if(!(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1)) {
-      window.location = "/"
-   }
-}, "jsonp");
+$.ajax({
+  type: "GET",
+  url: "https://api.ipify.org?format=json",
+  contentType: 'application/json',
+  success: function(response){
+    var clientIP = response.ip;
+    if(!(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1)) {
+      window.location = "/internalHtml"
+    }
+  }
+});
 </script>
 {% for post in site.posts %}
     <div class="row clearfix">
