@@ -1,17 +1,16 @@
 <section class="module clearfix tabs-container page-nav whole-page" data-function="tabs" id='main-nav-tabs'>
   <h1 class="dev-logo">
       <a class="internal-link" href="/">
-        <img src="/images/logo-positive.svg" height="35" class="dev-logo-image"/>
+        <img src="/images/sky-logo.png" height="35" class="dev-logo-image"/>
         <span class="dev-logo-text">
         developers
         </span>
       </a>
   </h1>
 
-  <label for="menu_toggle" class="menu_button"><i class="skyicon-menu" aria-hidden="true"></i></label>
-  <input type="checkbox" id="menu_toggle"/>
-  <label class="menu_overlay" for="menu_toggle"></label>
-  <ul class="tabs clearfix main-menu" role="tablist">
+  <label class="menu_button" id="menu_button"><i class="skyicon-menu" aria-hidden="true"></i></label>
+  <label class="menu_overlay" id="menu_overlay" for="menu_toggle"></label>
+  <ul id="main-menu" class="tabs clearfix main-menu" role="tablist">
 
     {% for p in site.data.navigation %}
     {% if p.title %}
@@ -26,3 +25,15 @@
     {% endfor %}
   </ul>
 </section>
+
+<script type="text/javascript">
+    document.getElementById('menu_button').addEventListener('click', function() {
+        document.getElementById('main-menu').classList.toggle('active');
+        document.getElementById('menu_overlay').classList.toggle('active');
+    });
+
+    document.getElementById('menu_overlay').addEventListener('click', function() {
+        document.getElementById('main-menu').classList.remove('active');
+        document.getElementById('menu_overlay').classList.remove('active');
+    });
+</script>
