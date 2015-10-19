@@ -28,4 +28,4 @@
 
 - name: nemo
   author: sky-uk
-  description: This project is for rendering form elements and validating user input. It supports a modified version of the siren data structure.
+  description: This project is for rendering form elements and validating user input. It supports a modified version of the siren data structure to dynamically construct the form.
