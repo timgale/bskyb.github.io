@@ -13,15 +13,17 @@
   <ul id="main-menu" class="tabs clearfix main-menu" role="tablist">
 
     {% for p in site.data.navigation %}
-    {% if p.title %}
-    {% if p.url == page.url %}
-    <li id="{{p.title}}" class="tab selected" role="tab">
-    {% else %}
-    <li id="{{p.title}}" class="tab" role="tab">
-    {% endif %}
-      <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
-    </li>
-    {% endif %}
+      {% if p.title %}
+        {% if p.title != "Open Source" %}
+          {% if p.url == page.url %}
+            <li id="{{p.title}}" class="tab selected" role="tab">
+          {% else %}
+            <li id="{{p.title}}" class="tab" role="tab">
+          {% endif %}
+            <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
+          </li>
+        {% endif %}
+      {% endif %}
     {% endfor %}
   </ul>
 </section>

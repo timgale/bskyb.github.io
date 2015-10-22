@@ -2,20 +2,21 @@
 layout: default
 title: Open Source
 ---
-    <h3>We're contributing back to the open source community</h3>
 
-    <p class="lead text--instructions">Our open source projects</p>
-    {% for project in site.data.projects %}
+<h3>We're contributing back to the open source community</h3>
+
+<p class="lead text--instructions">Our open source projects</p>
+{% for project in site.data.projects %}
     {% capture project_url %}//github.com/{{project.author}}/{{project.name}}{% endcapture %}
-      {% cycle '<ul class="github clearfix">', '', '', '' %}
-        <li class="skycom-3">
-            <div class="github-thumbnail">
-                <span class="mega-octicon octicon-repo"></span>
-                <a class="author" href="//github.com/{{project.author}}">{{project.author}}</a>
-                <span>/</span>
-                <a class="project" href="{{project_url}}">{{project.name}}</a>
-                <a class="project" href="{{project_url}}"><h4><i>{{project.description}}</i></h4></a>
-            </div>
-        </li>
-        {% cycle '', '', '', '</ul>' %}
-    {% endfor %}
+    {% cycle '<ul class="github clearfix">', '', '', '' %}
+    <li class="skycom-3">
+        <div class="github-thumbnail">
+            <span class="mega-octicon octicon-repo"></span>
+            <a class="author" href="//github.com/{{project.author}}">{{project.author}}</a>
+            <span>/</span>
+            <a class="project" href="{{project_url}}">{{project.name}}</a>
+            <a class="project" href="{{project_url}}"><h4><i>{{project.description}}</i></h4></a>
+        </div>
+    </li>
+    {% cycle '', '', '', '</ul>' %}
+{% endfor %}

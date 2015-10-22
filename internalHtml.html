@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Index
+title: Blog
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-  getClientIP(false); //Param 'fromInternal'
+  getClientIP(true); //Param 'fromInternal'
 </script>
-{% for post in site.categories.external %}
+{% for post in site.posts %}
   {% include blogbody.html %}
 {% endfor %}
