@@ -6,8 +6,6 @@ title: Index
 <script>
   getClientIP(false); //Param 'fromInternal'
 </script>
-
-<h3>Latest Posts</h3>
 {% for post in site.categories.external %}
   {% include blogbody.html %}
 {% endfor %}
