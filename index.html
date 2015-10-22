@@ -4,18 +4,9 @@ title: Index
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-$.ajax({
-  type: "GET",
-  url: "https://api.ipify.org?format=json",
-  contentType: 'application/json',
-  success: function(response){
-    var clientIP = response.ip;
-    if(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1) {
-      window.location = "/internalHtml"
-    }
-  }
-});
+  getClientIP('index');
 </script>
+
 <h3>Latest Posts</h3>
 {% for post in site.categories.external %}
   {% include blogbody.html %}
