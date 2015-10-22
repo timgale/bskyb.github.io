@@ -1,4 +1,4 @@
-function getClientIP(originalLocation) {
+function getClientIP(fromInternal) {
   console.log('gci');
   $.ajax({
     type: "GET",
@@ -7,13 +7,13 @@ function getClientIP(originalLocation) {
     async: true,
     success: function(response){
       var clientIP = response.ip;
-      if(originalLocation == 'index') {
-        if(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1) {
-          window.location = "/internalHtml"
-        }
-      } else if (originalLocation == 'internal') {
+      if(fromInternal) {
         if(!(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1)) {
           window.location = "/"
+        }
+      } else {
+        if(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1) {
+          window.location = "/internalHtml"
         }
       }
     }
