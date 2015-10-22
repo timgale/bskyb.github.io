@@ -15,7 +15,7 @@
     {% for p in site.data.navigation %}
       {% if p.title %}
         {% if p.title != "Open Source" %}
-          {% if p.url == page.url %}
+          {% if p.url == page.url%}
             <li id="{{p.title}}" class="tab selected" role="tab">
           {% else %}
             <li id="{{p.title}}" class="tab" role="tab">
@@ -29,13 +29,16 @@
 </section>
 
 <script type="text/javascript">
-    document.getElementById('menu_button').addEventListener('click', function() {
-        document.getElementById('main-menu').classList.toggle('active');
-        document.getElementById('menu_overlay').classList.toggle('active');
-    });
+  if(window.location.pathname == "/internalHtml/") {
+      document.getElementById('Blog').classList.add('selected');
+  }
+  document.getElementById('menu_button').addEventListener('click', function() {
+    document.getElementById('main-menu').classList.toggle('active');
+    document.getElementById('menu_overlay').classList.toggle('active');
+  });
 
-    document.getElementById('menu_overlay').addEventListener('click', function() {
-        document.getElementById('main-menu').classList.remove('active');
-        document.getElementById('menu_overlay').classList.remove('active');
-    });
+  document.getElementById('menu_overlay').addEventListener('click', function() {
+    document.getElementById('main-menu').classList.remove('active');
+    document.getElementById('menu_overlay').classList.remove('active');
+  });
 </script>
