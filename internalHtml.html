@@ -11,20 +11,11 @@ $.ajax({
   success: function(response){
     var clientIP = response.ip;
     if(!(clientIP.indexOf("90.216.134.") > -1 || clientIP.indexOf("90.216.150.") > -1)) {
-      window.location = "/internalHtml"
+      window.location = "/"
     }
   }
 });
 </script>
 {% for post in site.posts %}
-    <div class="row clearfix">
-      <div class="skycom-7">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p class="lead">{{ post.excerpt }}</p>
-      </div>
-      <div class="skycom-5">
-        <img class="img-responsive center-block circlecontainer" src="{{post.image}}" class="image" alt="Generic placeholder image" border="5">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-  {% endfor %}
+  {% include blogbody.html %}
+{% endfor %}
