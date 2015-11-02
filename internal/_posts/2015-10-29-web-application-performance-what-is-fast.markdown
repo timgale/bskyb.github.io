@@ -11,7 +11,9 @@ excerpt: "Perceived performance is a key factor in abandonment rate and in the p
 
 Perceived performance is a key factor in abandonment rate and in the percentage of those abandonments that are permanent. How should we think about performance, measure it and know that we are fast enough?
 
-Performance can be measured as: "The top of the page is visually complete and all elements that are on-screen are fully interact-able." This does not mean that elements further down the page need to be loaded or working in that time nor does it mean purely display elements near the top need to be fully-functional (e.g. carousels) but they do need to be visually complete (e.g. for carousel the first frame must be displayed). Sites perform differently depending on the caching of static assets, as such it’s not as simple as just a single measurement.  I’m considering the following scenarios:
+Performance can be measured as: "The top of the page is visually complete and all elements that are on-screen are fully interact-able.". This does not mean that elements near the top of the page need to be fully functional (e.g. a carousel must show the first frame but the buttons to slide left/right don't need to work yet) nor does it mean that elements further down need to be loaded (so images may be missing if the user isn't going to see it yet).
+
+Sites perform differently depending on the caching of static assets, as such it’s not as simple as just a single measurement.  I’m considering the following scenarios:
  1. 'Fresh' use; nothing cached.
  2. Returned visitor; 2 hours since last visit, some things are still cached.
  3. In-session; everything that can be cached is cached.
