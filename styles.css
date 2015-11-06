@@ -1,0 +1,202 @@
+/* line 1, /Users/abr65/Documents/Development/dev.sky.com/css/base.scss */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 1, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+.header {
+  height: 100px; }
+
+/* line 5, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+.dev-logo {
+  font-size: 20px;
+  float: left;
+  margin: 0 3%;
+  line-height: 45px; }
+  /* line 11, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+  .dev-logo a {
+    display: block;
+    text-decoration: none;
+    line-height: 45px; }
+    /* line 16, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+    .dev-logo a:hover {
+      border-bottom: 2px solid #0073c5;
+      color: #0070a5;
+      margin-bottom: -2px; }
+    /* line 22, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+    .dev-logo a .dev-logo-image {
+      vertical-align: middle; }
+
+/* line 28, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+.menu_button {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  display: block;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  line-height: 46px;
+  text-align: center;
+  font-size: 30px; }
+  /* line 40, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+  .menu_button i {
+    display: block;
+    font-size: 15px; }
+
+/* line 46, /Users/abr65/Documents/Development/dev.sky.com/css/header.scss */
+.tabs.main-menu {
+  float: left;
+  -webkit-transition: all 0.2s ease-out;
+  margin-bottom: 0;
+  border-bottom: none; }
+
+/*
+-----------------------------------------
+ > Index Page <
+-----------------------------------------
+*/
+/* line 7, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+.polaris-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 4vw;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 17, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+.polaris-wrapper * {
+  box-sizing: inherit; }
+
+/* line 21, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+.hero-container {
+  position: relative;
+  padding-bottom: 32.5%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 27, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .hero-container .hero-wrapper {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden; }
+    /* line 34, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+    .hero-container .hero-wrapper .hero-vid {
+      margin-top: -185px; }
+
+/* line 40, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+.tile-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  position: relative;
+  clear: both;
+  margin-top: -3vw; }
+  /* line 49, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .tile-container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  /* line 54, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .tile-container .tile {
+    position: relative;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 22px; }
+    /* line 61, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+    .tile-container .tile.small {
+      width: 30.69995%;
+      float: left;
+      margin-left: 1.31669%;
+      margin-right: 1.31669%; }
+    /* line 67, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+    .tile-container .tile.medium {
+      width: 47.36662%;
+      float: left;
+      margin-left: 1.31669%;
+      margin-right: 1.31669%; }
+    /* line 73, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+    .tile-container .tile.large {
+      width: 97.36662%;
+      float: left;
+      margin-left: 1.31669%;
+      margin-right: 1.31669%; }
+  /* line 81, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .tile-container .tile-inner {
+    position: relative;
+    overflow: hidden; }
+  /* line 86, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .tile-container .tile-link {
+    display: block;
+    text-decoration: none; }
+    /* line 89, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+    .tile-container .tile-link:hover {
+      cursor: pointer; }
+  /* line 94, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .tile-container .tile-bg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #eee;
+    transition: all 0.6s ease; }
+  /* line 104, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .tile-container .tile-media {
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden; }
+    /* line 108, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+    .tile-container .tile-media .tile-media-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border: 0;
+      transition: -webkit-transform 1s ease, margin 1s ease;
+      transition: transform 0.6s ease, margin 1s ease; }
+  /* line 119, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+  .tile-container .tile-content {
+    padding-bottom: 150px;
+    position: relative; }
+    /* line 122, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+    .tile-container .tile-content .tile-content-inner {
+      position: absolute;
+      left: 1.5vw;
+      right: 1.5vw;
+      top: 1.1vw;
+      bottom: 1vw; }
+      /* line 128, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+      .tile-container .tile-content .tile-content-inner .tile-title {
+        color: #222;
+        font-size: 1.97368vw;
+        padding: 0;
+        margin: 0;
+        line-height: 1em;
+        font-family: SkyTextRegular,Helvetica,Arial,Sans-Serif;
+        font-weight: 400; }
+
+/*
+-----------------------------------------
+ > Hover Effect <
+-----------------------------------------
+*/
+/* line 147, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+.tile-link:hover .tile-media-bg {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05); }
+
+/* line 152, /Users/abr65/Documents/Development/dev.sky.com/css/index.scss */
+.tile-link:hover .tile-bg {
+  background-color: #aaa; }
+
+/*# sourceMappingURL=styles.css.map */
