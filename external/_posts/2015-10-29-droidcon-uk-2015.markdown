@@ -16,6 +16,7 @@ At NowTV, some developers attended the first day and others attended the second 
     <p><span ><img height="250" width="333" src="/images/identity/droidcon/IMG_20151030_084946.jpg" title="Lobby / Sponsors"></span><span><img height="250" width="334" src="/images/identity/droidcon/IMG_20151030_152726.jpg" ></span><span ><img  alt="Sky showcase" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_132429.jpg" title="Sky showcase"></span></p>
 
  <h2 id="DroidconLondon2015-Day1">Day 1</h2>
+ <hr />
     <h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Build your own video streaming app! –<span style="color: rgb(128,128,128);"> Andrew Jack</span></span></h3>
 	
 	<p> One of the first talks given at Droidcon was by Sky’s very own Andrew Jack. Andrew talked about the various ways of integrating video streaming into an Android app, including those built into the platform as well as third-party alternatives. It also covered the different codecs which are supported, and touched on issues such as DRM and compatibility.</p>
@@ -30,6 +31,7 @@ At NowTV, some developers attended the first day and others attended the second 
 	<p>This workshop was focused on TDD, and was led by Corey Latislaw, an Android Google Developer Expert. It looked at the concept of Katas- ‘small programs and exercises that you complete over and over again’- and how this can be used to improve the speed at which you write high-quality applications. It focused on writing Robolectric tests for a simple application, looking at best practices for TDD and how this can improve your code quality.</p>
 
     <h2 id="DroidconLondon2015-Day2">Day 2</h2>
+    <hr />
 
     <h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Android for Java Developers –<span style="color: rgb(128,128,128);"> Chet Haase</span></span></h3>
     <p><span><img  alt="Android for Java Developers" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_085939.jpg" title="Android for Java Developers"></span></p>
