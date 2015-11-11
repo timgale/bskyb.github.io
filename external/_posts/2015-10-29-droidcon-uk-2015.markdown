@@ -5,13 +5,13 @@ date:   2015-10-29 09:00:00
 author: "Laurent Sebag, Mubariz Ahmadi, Mostafa HadianDehkordi, Michael Tweed"
 categories: conferences
 image: /images/identity/droidcon2015.jpg
-excerpt: "The Droidcon London was once again a success in 2015, lots of developers attended from the UK and other countries. This year, Sky was a sponsor, gave talks and sent developers to attend the conferences. Sky had a stand were the company was promoted and was attracting talents to join our ranks.
+excerpt: "The Droidcon London was once again a success in 2015, lots of developers attended from the UK and other countries. This year, Sky was a sponsor, gave talks and sent developers to attend the conferences. Sky had a stand where the company was promoted and was attracting talent to join our ranks.
 At NowTV, some developers attended the first day and others attended the second day of the Droidcon, here is a summary of what happened during these two days."
 ---
 <h2>Summary</h2>
 <div>
     <p>Here is a post to share what we have learnt at the <a href="https://skillsmatter.com/conferences/6712-droidcon-2015" class="external-link" rel="nofollow">Droidcon London 2015</a> conference that took place on the 29th and 30th of October 2015.</p>
-    <p>The Droidcon London was once again a success in 2015, lots of developers attended from the UK and other countries. This year, Sky was a sponsor, gave talks and sent developers to attend the conferences. Sky had a stand were the company was promoted and was attracting talents to join our ranks.</p>
+    <p>The Droidcon London was once again a success in 2015, lots of developers attended from the UK and other countries. This year, Sky was a sponsor, gave talks and sent developers to attend the conferences. Sky had a stand where the company was promoted and was attracting talent to join our ranks.</p>
     <p>At Sky, some developers attended the first day and others attended the second day of the Droidcon, here is a summary of what happened during these two days.</p>
     <p><span ><img height="250" width="333" src="/images/identity/droidcon/IMG_20151030_084946.jpg" title="Lobby / Sponsors"></span><span><img height="250" width="334" src="/images/identity/droidcon/IMG_20151030_152726.jpg" ></span><span ><img  alt="Sky showcase" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_132429.jpg" title="Sky showcase"></span></p>
 
@@ -24,7 +24,7 @@ At NowTV, some developers attended the first day and others attended the second 
 
 	<h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Workshop: User centered design –<span style="color: rgb(128,128,128);"> Leonie Brewin</span></span></h3>
 
-	<p> Leonie Brewin is a designer at Novoda, and in this workshop (which spanned two sessions) attendees were put into groups and tasked with creating a design for a property-finding app. Leonie walked through various techniques and best practices for creating designs that best serve the needs of users, and how that process can be optimised to get designers, developers and product owners working closely together to produce high-quality applications.</p>
+	<p> Leonie Brewin is a designer at Novoda, and in this workshop (which spanned two sessions) attendees were put into groups and tasked with creating a design for a property-finding app. Leonie walked through various techniques and best practices for creating designs that best serve the needs of users. He explained how that process can be optimised to get designers, developers and product owners working closely together to produce high-quality applications.</p>
 	<p>More info: <a href="https://skillsmatter.com/skillscasts/6847-workshop-user-centred-design">https://skillsmatter.com/skillscasts/6847-workshop-user-centred-design </a></p>
 
 	<h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Workshop: Android Katas –<span style="color: rgb(128,128,128);"> Corey Latislaw</span></span></h3>
@@ -40,7 +40,7 @@ At NowTV, some developers attended the first day and others attended the second 
     <ul>
     	<li>Application must not expect that their application is the main function of the user's phone: think battery and performance.</span></li>
     	<li>Android uses the Java language but it has its own runtime (!= jre)</li>
-    	<li>Difference between server and mobile. Servers use the java runtime and run on fast CPU with lots of RAM. Mobile apps run on the Dalvik/Art runtime and a slow CPU/small RAM. The way garbage collection is done is different. On mobile, garbage collection is batched for when the phone is idle if possible.</span></li><li><span>The more memory allocations your application does, the more GC you will have, the slower the experience will be: try to re-use objects instead of creating new objects.</li>
+    	<li>Difference between server and mobile. Servers use the Java runtime and run on fast CPU with lots of RAM. Mobile apps run on the Dalvik/Art runtime and a slow CPU/small RAM. The way garbage collection is done is different. On mobile, garbage collection is batched for when the phone is idle if possible.</span></li><li><span>The more memory allocations your application does, the more GC you will have, the slower the experience will be: try to re-use objects instead of creating new objects.</li>
     </ul><p><strong>More info:</strong></p>
     <ul>
     	<li><span><a href="https://medium.com/google-developers/developing-for-android-introduction-5345b451567c" class="external-link" rel="nofollow">Developing for Android - in depth version of the talk</a></span></li>
@@ -66,7 +66,7 @@ At NowTV, some developers attended the first day and others attended the second 
 	</ul>
 
 	<h3 id="DroidconLondon2015-Giveyouruserssuperpowersintherealworld–HoiLam">Give your users superpowers in the real world – <span style="color: rgb(128,128,128);">Hoi Lam</span></h3>
-	<p><span  ><img  alt="Give your users superpowers in the real world" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_110134.jpg" title="Give your users superpowers in the real world"></span></p><p>Hoi Lam presented in this talk recommendations from Google on hardware and software for the Internet Of Things. It seems that Hoi wasn't allowed to share much information about his projects, brillo/weave, and this was a disappointment.</p><p>The talk was mainly about Google advertising their hardware (chromecast, Android TV, <a href="https://www.android.com/intl/en_uk/auto/" class="external-link" rel="nofollow">Android Auto</a>, <a href="https://developers.google.com/beacons/?hl=en" class="external-link" rel="nofollow">Google beacon</a>) and software (Android, <a href="https://developers.google.com/weave/" class="external-link" rel="nofollow">Weave</a> for IOT communication and <a href="https://developers.google.com/brillo/?hl=en" class="external-link" rel="nofollow">Brillo</a> for IOT hardware). However no technical details were given about the projects.</p><p>A funny annecdote was how they went about deciding if a device had heat issues that wouldn't be acceptable for customers: the cheek test. Managers have to test the devices by feeling it on their cheek, if it burns, it is an unacceptable amount of heat and needs to be addressed before commercialisation.</p>
+	<p><span  ><img  alt="Give your users superpowers in the real world" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_110134.jpg" title="Give your users superpowers in the real world"></span></p><p>In this talk, Hoi Lam presented a few recommendations from Google on hardware and software for the Internet Of Things. It seems that Hoi wasn't allowed to share much information about his projects, Brillo/Weave, and this was a disappointment.</p><p>The talk was mainly about Google advertising their hardware (chromecast, Android TV, <a href="https://www.android.com/intl/en_uk/auto/" class="external-link" rel="nofollow">Android Auto</a>, <a href="https://developers.google.com/beacons/?hl=en" class="external-link" rel="nofollow">Google Beacon</a>) and software (Android, <a href="https://developers.google.com/weave/" class="external-link" rel="nofollow">Weave</a> for IOT communication and <a href="https://developers.google.com/brillo/?hl=en" class="external-link" rel="nofollow">Brillo</a> for IOT hardware). However no technical details were given about the projects.</p><p>A funny annecdote was how they went about deciding if a device had heat issues that wouldn't be acceptable for customers: the cheek test. Managers have to test the devices by feeling it on their cheek, if it burns, it is an unacceptable amount of heat and needs to be addressed before commercialisation.</p>
 
 	<h3 id="DroidconLondon2015-AdvancedscrollingtechniquesinAndroid–CyrilMottier">Advanced scrolling techniques in Android – <span style="color: rgb(128,128,128);">Cyril Mottier</span></h3>
 
@@ -105,7 +105,7 @@ At NowTV, some developers attended the first day and others attended the second 
 	<h3 id="DroidconLondon2015-AdvancedDevelopmentwiththeKotlinLanguage–JakeWharton">Advanced Development with the Kotlin Language&nbsp;– <span style="color: rgb(128,128,128);">Jake Wharton</span></h3>
 
 	<p><span  ><img  alt="Advanced Development with the Kotlin Language" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_144522.jpg" title="Advanced Development with the Kotlin Language"></span></p>
-	<p>In this talk, Jake Wharton gave an intro to the Kotlin language and showed how improves Android development.</p>
+	<p>In this talk, Jake Wharton gave an intro to the Kotlin language and showed how it improves Android development.</p>
 	<p>Kotlin is a language that compiles into .class files just like Java. It brings some features not possible in Java, such as adding methods to platform types. For example in Android, we always have APIs that we create a Util class for. With Kotlin, you can add methods to classes defined outside of your code.</p>
 	<p><span style="color: rgb(0,0,0);">More information:</span></p>
 	<ul>
