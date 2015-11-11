@@ -1,0 +1,160 @@
+---
+layout: post
+title:  "Sky at Droidcon UK 2015"
+date:   2015-10-29 09:00:00
+author: "Laurent Sebag, Mubariz Ahmadi, Mostafa HadianDehkordi, Michael Tweed"
+categories: conferences
+image: /images/identity/droidcon2015.jpg
+excerpt: "The Droidcon London was once again a success in 2015, lots of developers attended from the UK and other countries. This year, Sky was a sponsor, gave talks and sent developers to attend the conferences. Sky had a stand where the company was promoted and was attracting talent to join our ranks.
+At NowTV, some developers attended the first day and others attended the second day of the Droidcon, here is a summary of what happened during these two days."
+---
+<h2>Summary</h2>
+<div>
+    <p>Here is a post to share what we have learnt at the <a href="https://skillsmatter.com/conferences/6712-droidcon-2015" class="external-link" rel="nofollow">Droidcon London 2015</a> conference that took place on the 29th and 30th of October 2015.</p>
+    <p>The Droidcon London was once again a success in 2015, lots of developers attended from the UK and other countries. This year, Sky was a sponsor, gave talks and sent developers to attend the conferences. Sky had a stand where the company was promoted and was attracting talent to join our ranks.</p>
+    <p>At Sky, some developers attended the first day and others attended the second day of the Droidcon, here is a summary of what happened during these two days.</p>
+    <p><span ><img height="250" width="333" src="/images/identity/droidcon/IMG_20151030_084946.jpg" title="Lobby / Sponsors"></span><span><img height="250" width="334" src="/images/identity/droidcon/IMG_20151030_152726.jpg" ></span><span ><img  alt="Sky showcase" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_132429.jpg" title="Sky showcase"></span></p>
+
+ <h2 id="DroidconLondon2015-Day1">Day 1</h2>
+ <hr />
+    <h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Build your own video streaming app! –<span style="color: rgb(128,128,128);"> Andrew Jack</span></span></h3>
+	
+	<p> One of the first talks given at Droidcon was by Sky’s very own Andrew Jack. Andrew talked about the various ways of integrating video streaming into an Android app, including those built into the platform as well as third-party alternatives. It also covered the different codecs which are supported, and touched on issues such as DRM and compatibility.</p>
+	<p>More info: <a href="https://skillsmatter.com/skillscasts/6671-build-your-own-video-streaming-app">https://skillsmatter.com/skillscasts/6671-build-your-own-video-streaming-app</a></p>
+
+	<h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Workshop: User centered design –<span style="color: rgb(128,128,128);"> Leonie Brewin</span></span></h3>
+
+	<p> Leonie Brewin is a designer at Novoda, and in this workshop (which spanned two sessions) attendees were put into groups and tasked with creating a design for a property-finding app. Leonie walked through various techniques and best practices for creating designs that best serve the needs of users. He explained how that process can be optimised to get designers, developers and product owners working closely together to produce high-quality applications.</p>
+	<p>More info: <a href="https://skillsmatter.com/skillscasts/6847-workshop-user-centred-design">https://skillsmatter.com/skillscasts/6847-workshop-user-centred-design </a></p>
+
+	<h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Workshop: Android Katas –<span style="color: rgb(128,128,128);"> Corey Latislaw</span></span></h3>
+	<p>This workshop was focused on TDD, and was led by Corey Latislaw, an Android Google Developer Expert. It looked at the concept of Katas- ‘small programs and exercises that you complete over and over again’- and how this can be used to improve the speed at which you write high-quality applications. It focused on writing Robolectric tests for a simple application, looking at best practices for TDD and how this can improve your code quality.</p>
+
+    <h2 id="DroidconLondon2015-Day2">Day 2</h2>
+    <hr />
+
+    <h3 id="DroidconLondon2015-AndroidforJavaDevelopers–ChetHaase"><span>Android for Java Developers –<span style="color: rgb(128,128,128);"> Chet Haase</span></span></h3>
+    <p><span><img  alt="Android for Java Developers" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_085939.jpg" title="Android for Java Developers"></span></p>
+    <p><span>The second day opened with a keynote given by Chet Haase. During this talk, Chet talked about differences between Java applications running on computers and Java running on the Android mobile platform.</span></p>
+    <p><strong>Key information:</strong></p>
+    <ul>
+    	<li>Application must not expect that their application is the main function of the user's phone: think battery and performance.</span></li>
+    	<li>Android uses the Java language but it has its own runtime (!= jre)</li>
+    	<li>Difference between server and mobile. Servers use the Java runtime and run on fast CPU with lots of RAM. Mobile apps run on the Dalvik/Art runtime and a slow CPU/small RAM. The way garbage collection is done is different. On mobile, garbage collection is batched for when the phone is idle if possible.</span></li><li><span>The more memory allocations your application does, the more GC you will have, the slower the experience will be: try to re-use objects instead of creating new objects.</li>
+    </ul><p><strong>More info:</strong></p>
+    <ul>
+    	<li><span><a href="https://medium.com/google-developers/developing-for-android-introduction-5345b451567c" class="external-link" rel="nofollow">Developing for Android - in depth version of the talk</a></span></li>
+    	<li><a href="https://www.parleys.com/tutorial/part-1-android-performance-workshop" class="external-link" rel="nofollow">Android performance workshop</a>&nbsp;- greater explanation on how to increase performance (especially to do with allocations)<br><span><br></span></li>
+    </ul>
+
+    <h3 id="DroidconLondon2015-TheJackandJillbuildsystem–EricLafortune"><span>The Jack and Jill build system – <span style="color: rgb(128,128,128);">Eric Lafortune</span></span></h3>
+    <p><span  ><img  alt="The Jack and Jill build system" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_095838.jpg" title="The Jack and Jill build system"></span><span ><img  alt="Jack and Jill - Diagram" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_100858.jpg" title="Jack and Jill - Diagram"></span></p>
+
+    <p>During this talk, Eric Lafortune gave a presentation on the new Android compilers: Jack and Jill that replace the legacy javac/dex.</p>
+	<p><strong>Key information:</strong></p>
+	<ul>
+		<li>Jill compiles .class files to .dex files, this is mostly to support libraries compiled with javac.</li>
+		<li>Jack compiles .java files or .jayce files directly to .dex files</li>
+		<li>We're not exactly sure what the reason is to move away from javac: probably for more technical control and because of politics (Oracle VS Google lawsuits)<br></li>
+		<li>Proguard is directly integrated with Jack</li>
+		<li>GuardSquare the company developing Proguard also has Dexguard, the commercial equivalent, that has better obfuscation/security against reverse engineering for businesses.</li>
+		<li>Jack and Jill is already used by AOSP, not used by default by Android Studio yet<br></li>
+	</ul>
+	<p><strong>More info:</strong><br></p>
+	<ul>
+		<li><span><span style="color: rgb(128,128,128);"><a href="https://www.guardsquare.com/blog/the_upcoming_jack_and_jill_compilers_in_android" class="external-link" rel="nofollow">https://www.guardsquare.com/blog/the_upcoming_jack_and_jill_compilers_in_android</a></span></span></li>
+	</ul>
+
+	<h3 id="DroidconLondon2015-Giveyouruserssuperpowersintherealworld–HoiLam">Give your users superpowers in the real world – <span style="color: rgb(128,128,128);">Hoi Lam</span></h3>
+	<p><span  ><img  alt="Give your users superpowers in the real world" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_110134.jpg" title="Give your users superpowers in the real world"></span></p><p>In this talk, Hoi Lam presented a few recommendations from Google on hardware and software for the Internet Of Things. It seems that Hoi wasn't allowed to share much information about his projects, Brillo/Weave, and this was a disappointment.</p><p>The talk was mainly about Google advertising their hardware (chromecast, Android TV, <a href="https://www.android.com/intl/en_uk/auto/" class="external-link" rel="nofollow">Android Auto</a>, <a href="https://developers.google.com/beacons/?hl=en" class="external-link" rel="nofollow">Google Beacon</a>) and software (Android, <a href="https://developers.google.com/weave/" class="external-link" rel="nofollow">Weave</a> for IOT communication and <a href="https://developers.google.com/brillo/?hl=en" class="external-link" rel="nofollow">Brillo</a> for IOT hardware). However no technical details were given about the projects.</p><p>A funny annecdote was how they went about deciding if a device had heat issues that wouldn't be acceptable for customers: the cheek test. Managers have to test the devices by feeling it on their cheek, if it burns, it is an unacceptable amount of heat and needs to be addressed before commercialisation.</p>
+
+	<h3 id="DroidconLondon2015-AdvancedscrollingtechniquesinAndroid–CyrilMottier">Advanced scrolling techniques in Android – <span style="color: rgb(128,128,128);">Cyril Mottier</span></h3>
+
+	<p><span  ><img  alt="Advanced scrolling techniques in Android" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_115918.jpg" title="Advanced scrolling techniques in Android"></span></p><p>During this talk, Cyril Mottier presented different scrolling concepts and explained how to implement scrolling yourself for a custom View.</p>
+	<p><strong>Key information:</strong></p>
+	<ul>
+		<li>types of scrolling: follows finger, fling (with inertia)</li>
+		<li>listing of Android scrolling Views: <a href="http://developer.android.com/reference/android/widget/ListView.html" class="external-link" rel="nofollow">ListView</a>, <a href="http://developer.android.com/reference/android/support/v7/widget/RecyclerView.html" class="external-link" rel="nofollow">RecyclerView</a>, <a href="http://developer.android.com/reference/android/widget/TextView.html" class="external-link" rel="nofollow">TextView</a> (for the editing part)</li>
+		<li>intro to scroll <a href="http://developer.android.com/reference/android/view/View.OnScrollChangeListener.html" class="external-link" rel="nofollow">listeners</a> and <a href="http://developer.android.com/reference/android/view/View.OnTouchListener.html" class="external-link" rel="nofollow">events</a></li>
+		<li><a href="http://developer.android.com/reference/android/support/v4/view/VelocityTrackerCompat.html" class="external-link" rel="nofollow">VelocityTracker</a> helps you calculate inertia</li>
+		<li><a href="http://developer.android.com/reference/android/support/v4/widget/EdgeEffectCompat.html" class="external-link" rel="nofollow">EdgeEffect</a> listeners</li>
+		<li>double scrolling: edge detection (nav menu), boundary (e.g. gmail moving back to message when zoomed in email), nested (e.g. action bar shrinks when scrolling up)</li>
+	</ul>
+
+	<h3 id="DroidconLondon2015-BuildingMeaningfulMotion–BenWeiss&amp;NickButcher">Building Meaningful Motion – <span style="color: rgb(128,128,128);">Ben Weiss &amp; Nick Butcher</span></h3>
+	<p><img  alt="Building Meaningful Motion" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_134616.jpg" title="Building Meaningful Motion"></p>
+
+	<p>Ben Weiss &amp; Nick Butcher presented animations and how they should complement the user's actions, not distract from them.</p>
+	<p><strong>Key information:</strong></p>
+
+	<ul>
+		<li>intro to Android animation APIs</li>
+		<li>demo of interpolators, they recommended <a href="http://developer.android.com/reference/android/support/v4/view/animation/FastOutSlowInInterpolator.html" class="external-link" rel="nofollow">fast out slow in</a> as it feels the most natural</li>
+		<li>Circular reveal demo: ViewAnimationUtils <a href="http://developer.android.com/reference/android/view/ViewAnimationUtils.html#createCircularReveal%28android.view.View,%20int,%20int,%20float,%20float%29" class="external-link" rel="nofollow">createCircularReveal</a></li>
+		<li>avoid changing view bounds in animations as it requires <a href="http://developer.android.com/reference/android/view/View.html#requestLayout%28%29" class="external-link" rel="nofollow">requestLayout</a> to be called on sub-views</li>
+		<li>demo of animations between Activities: <a href="http://developer.android.com/reference/android/support/v4/app/ActivityOptionsCompat.html" class="external-link" rel="nofollow">ActivityOptionsCompat</a>, transitionGroup property</li>
+		<li>demo of <a href="https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable.html" class="external-link" rel="nofollow">AnimatorVectorDrawable</a>: search button revealing seach box and back arrow, handwriting animation</li>
+	</ul>
+	<p>Links:</p>
+	<ul>
+		<li><a href="https://github.com/google/iosched" class="external-link" rel="nofollow">Google io app 2015 source code</a>: a good example of animations</li>
+		<li><a href="https://github.com/googlesamples/android-topeka" class="external-link" rel="nofollow">https://github.com/googlesamples/android-topeka</a></li>
+		<li>Showcase of material design: <a href="https://github.com/nickbutcher/plaid" class="external-link" rel="nofollow">https://github.com/nickbutcher/plaid</a></li>
+	</ul>
+
+	<h3 id="DroidconLondon2015-AdvancedDevelopmentwiththeKotlinLanguage–JakeWharton">Advanced Development with the Kotlin Language&nbsp;– <span style="color: rgb(128,128,128);">Jake Wharton</span></h3>
+
+	<p><span  ><img  alt="Advanced Development with the Kotlin Language" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_144522.jpg" title="Advanced Development with the Kotlin Language"></span></p>
+	<p>In this talk, Jake Wharton gave an intro to the Kotlin language and showed how it improves Android development.</p>
+	<p>Kotlin is a language that compiles into .class files just like Java. It brings some features not possible in Java, such as adding methods to platform types. For example in Android, we always have APIs that we create a Util class for. With Kotlin, you can add methods to classes defined outside of your code.</p>
+	<p><span style="color: rgb(0,0,0);">More information:</span></p>
+	<ul>
+		<li><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><a href="https://kotlinlang.org/" class="external-link" rel="nofollow">https://kotlinlang.org/</a></span></span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><br></span></span></li>
+		<li><a href="https://kotlinlang.org/docs/tutorials/kotlin-android.html" class="external-link" rel="nofollow">https://kotlinlang.org/docs/tutorials/kotlin-android.html</a></li>
+	</ul>
+
+	<h3 id="DroidconLondon2015-Vectorallthethings–MarkAllison">Vector all the things – <span style="color: rgb(128,128,128);">Mark Allison</span></h3>
+
+	<p><span  ><img  alt="Vector all the things" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_154605.jpg" title="Vector all the things"></span></p>
+	<p>Mark Allison gave a presentation about vector graphics and animating them. The slides of the talk with animation demos were actually an Android application running on a Nexus TV.</p>
+	<p><strong>Key information:</strong></p>
+	<ul>
+		<li>concept of vector images and path representation</li>
+		<li><a href="https://developer.android.com/reference/android/graphics/drawable/VectorDrawable.html" class="external-link" rel="nofollow">VectorDrawable</a> takes a path that can be obtained from an SVG file</li>
+		<li>Concept of viewport and actual size: the viewport is the base unit referenced in the path. The actual size will be used to scale the image to the desired size</li>
+		<li><a href="https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable.html" class="external-link" rel="nofollow">AnimatedVectorDrawable</a> can be used to transition between paths if they are in identical number. Mark demoed animations such as morphing from square to triangle.</li>
+		<li>It can also be used to animate the path as if they were being handwritten on screen: <a href="https://developer.android.com/reference/android/graphics/drawable/VectorDrawable.html" class="external-link" rel="nofollow">trimPathEnd</a> property</li>
+	</ul>
+	<p>More information:</p>
+	<ul>
+		<li><a href="https://blog.stylingandroid.com/" class="external-link" rel="nofollow">https://blog.stylingandroid.com/</a></li>
+	</ul>
+
+	<h3 id="DroidconLondon2015-HiveCI–JiteshGosai&amp;DavidBuckhurst">Hive CI&nbsp;– <span style="color: rgb(128,128,128);">Jitesh Gosai &amp; David Buckhurst</span></h3>
+
+	<p><span  ><img  alt="Hive CI" height="250" width="333" src="/images/identity/droidcon/IMG_20151030_164433.jpg" title="Hive CI"></span><span  ><img  alt="Hive CI Setup" height="250" width="330" src="/images/identity/droidcon/IMG_20151030_164920.jpg" title="Hive CI Setup"></span></p>
+	<p>Jitesh Gosai &amp; David Buckhurst presented Hive CI, an open source project developed at the BBC to help with running tests on several devices and reporting test results taking in account hardware issues.</p>
+	<p><strong>Key information:</strong></p>
+	<ul>
+		<li>intro to iPlayer: 250M playout requests a day with 105M being mobile devices</li>
+		<li>why a new CI: others were not device aware and not able to recover from device issues. Hive CI is capable of testing on multiple devices (average of 10 per machine).</li>
+		<li>iPlayer uses differences between screenshots to determine if a device is playing out or is buffering</li>
+		<li>iPlayer have broken down their test suites into small chunks to avoid too many false alerts</li>
+		<li>iPlayer has stopped using Calabash for Robotium/Expresso tests done by developers instead of QAs</li>
+	</ul>
+	<p>More information:</p>
+	<ul>
+		<li><a href="http://bbc.github.io/hive-ci/" class="external-link" rel="nofollow">http://bbc.github.io/hive-ci/</a></li>
+		<li><a href="http://www.bbc.co.uk/opensource/" class="external-link" rel="nofollow">http://www.bbc.co.uk/opensource/</a></li>
+	</ul>
+
+	<h2 id="DroidconLondon2015-MoreaboutDroidconLondon2015">More about Droidcon London 2015</h2>
+	<h3 id="DroidconLondon2015-Links">Links</h3>
+	<ul>
+		<li>Conference videos: <a href="https://skillsmatter.com/conferences/6712-droidcon-2015#skillscasts" class="external-link" rel="nofollow">https://skillsmatter.com/conferences/6712-droidcon-2015#skillscasts</a></li>
+		<li>More photos: <a href="https://goo.gl/photos/tSeJby3X84137MfF9" class="external-link" rel="nofollow">https://goo.gl/photos/tSeJby3X84137MfF9</a></li>
+		<li><a href="https://github.com/AndroidStudyGroup/conferences/wiki/DroidconUK2015"  class="external-link" rel="nofollow"> https://github.com/AndroidStudyGroup/conferences/wiki/DroidconUK2015 </a> </li>
+	</ul>
+    
+</div>
+
