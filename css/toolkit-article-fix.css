@@ -1,0 +1,21 @@
+.post {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.post ol, .post ul {
+  margin: 1em;
+}
+
+.post li {
+  list-style-type: disc;
+}
+
+.post h1 {
+  font-size: 40px;
+}
+
+.post h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+}

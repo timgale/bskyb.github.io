@@ -1,0 +1,121 @@
+/*
+-----------------------------------------
+ > Meetup Page <
+-----------------------------------------
+*/
+.panel-image {
+  width: 100% !important;
+}
+
+.panel-content ul {
+  list-style-type: circle;
+  line-height: 18px;
+  margin-left: 8%;
+}
+
+.polaris-wrapper.slider .img-container {
+  height: 468px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.polaris-wrapper.slider .tile-container {
+  margin-top: -170px;
+}
+
+.polaris-wrapper.slider .tile-container h2 {
+  color: #fff;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-prev, .polaris-wrapper.slider .tile-container .sliderTop .slick-next {
+  width: 45px;
+  height: 45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-prev:before, .polaris-wrapper.slider .tile-container .sliderTop .slick-next:before {
+  color: #333;
+  font-size: 45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-prev {
+  left: -45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-next {
+  right: -45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-dots li button:before {
+  font-size: 18px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-dots {
+  margin: 0;
+}
+
+.slider-panel .panel-media {
+  width: 60% !important;
+}
+
+.slider-panel .panel-info {
+  width: 35% !important;
+  margin-left: 4% !important;
+}
+
+.slider-panel .occurred {
+  color: #F05423;
+  font-size: 22px;
+}
+
+.polaris-wrapper.talks .tile-container {
+  margin-top: 0;
+}
+
+.polaris-wrapper.slider .title, .polaris-wrapper.talks .title {
+  color: #fff;
+  width: 64%;
+  background-color: #333;
+  padding: 15px 15px 15px 315px;
+  margin: 0 -20% 20px;
+  text-align: right;
+}
+
+.tile-meta {
+  color: #555;
+  font-weight: bold;
+  transition: all .4s ease;
+}
+
+.tile-meta.occurred {
+  color: #F05423;
+  font-size: 18px;
+}
+
+.tile-link:hover .tile-meta {
+  color: #fff;
+  font-weight: bold;
+  transition: all .4s ease;
+}
+
+.tile-media-bg.blur {
+  z-index: 1;
+  -webkit-filter: blur(4px);
+}
+
+.panel-des.occurred {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 20px;
+  line-height: 20px;
+}
+
+.panel-des a, .panel-des .link {
+  color: #9a9a9a;
+  transition: all 0.2s ease;
+}
+
+.panel-des a:hover, .panel-des .link:hover {
+  color: #ababab;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}

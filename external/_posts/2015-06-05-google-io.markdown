@@ -6,7 +6,7 @@ date:   2015-06-05 14:33:00
 image: https://events.google.com/io2015/images/io15-color.png
 excerpt: "Summary of our experience at Google I/O"
 ---
-<img src="/images/golden-gate-bridge.jpg" width="100%" />
+<img src="/images/blogs/golden-gate-bridge.jpg" width="100%" />
 
 Last week I was lucky enough to attend Google I/O in San Francisco. In this post I will show you some of the best bits of my I/O experience.
 
@@ -26,7 +26,7 @@ Android already has a great Intent system, which is used to launch apps from oth
 Auto backup will be enabled by default on all apps built for Android M. The data your app creates on a user device is preserved by uploading it to the user’s Google Drive account and encrypting it. Developers can include or exclude data from the backup system.
 
 ### Now on tap
-![Now on tap](/images/tomorrowland-final.png)
+![Now on tap](/images/blogs/tomorrowland-final.png)
 
 Now on tap makes it easier for android users to get assistance. “With “Now on tap,” you can simply tap and hold the home button for assistance without having to leave what you’re doing—whether you’re in an app or on a website. For example, if a friend emails you about seeing the new movie Tomorrowland, you can invoke Google Now without leaving your app, to quickly see the ratings, watch a trailer, or even buy the movie on Sky Store - then get right back to what you were doing.“ All developers have to do to enable this feature is to set up App Indexing on the Google Play Console.
 

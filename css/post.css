@@ -1,0 +1,26 @@
+.post-header-title {
+  color: #fff;
+  width: 980px;
+  background-color: #734993;
+  margin-left: -330px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.post-header-title h1 {
+  font-weight: bold;
+}
+
+.post-meta {
+  line-height: 0;
+  padding-bottom: 18px;
+}
+
+.post h2 {
+  color: #734993;
+  font-weight: bold;
+}
+
+.post th, .post a {
+  color: #734993;
+}

@@ -1,11 +1,113 @@
 ---
-layout: default
 title: Index
 ---
+{% include head.html %}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
   getClientIP(false); //Param 'fromInternal'
 </script>
-{% for post in site.categories.external %}
-  {% include blogbody.html %}
-{% endfor %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
+        <link rel="stylesheet" href="http://web-toolkit.global.sky.com/2.3.6/stylesheets/toolkit.css"/>
+<!--        <link rel="stylesheet" href="//octicons.github.com/components/octicons/octicons/octicons.css"/>-->
+        <link rel='stylesheet' href='//assets.sky.com/dist/1235/fonts/skyicons.css'>
+        <link rel="stylesheet" href="styles.css"/>
+<!--        <link rel="stylesheet" href="/css/toolkit-article-fix.css"/>-->
+        <title>Sky Developers</title>
+    </head>
+
+    <body>
+        <div class="polaris-wrapper">
+            <section class="hero-container">
+                <div class="hero-wrapper">
+                    <video loop autoplay class="hero-vid" width="100%">
+                        <source src="https://player.vimeo.com/external/133429919.hd.mp4?s=83f8598511742e45774ec271adb7237c&profile_id=113"/>
+                    </video>
+                </div>
+            </section>
+
+            <section class="tile-container" id="tiles">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            var numOfBlogs = {{ site.categories.external | size }};
+                            var className = "";
+                            var posts = "{\"posts\":[";
+                            var postCount = 0;
+                            {% for post in site.categories.external %}
+                                posts += "{\"title\" : \"{{post.title}}\", \"image\" : \"{{post.image}}\" , \"url\" : \"{{post.url}}\"},";
+                            {% endfor %}
+                            posts = posts.substring(0, posts.length - 1);
+                            posts += "]}";
+                            posts = JSON.parse(posts);
+
+                            if(numOfBlogs >= 3) {
+                                if((numOfBlogs - 1) % 3 == 0){
+                                    createRows("double", 2);
+                                    var n = ((numOfBlogs + 2) / 3) - 2;
+                                    createRows("triple", n);
+                                } else if ((numOfBlogs - 2) % 3 == 0){
+                                    createRows("double", 1);
+                                    var n = ((numOfBlogs + 1) / 3) - 1;
+                                    createRows("triple", n);
+                                } else {
+                                    createRows("triple", numOfBlogs / 3);
+                                }
+                            } else {
+                                {% for post in site.categories.external %}
+                                    alert("{{post.id}}");
+                                    $('#tiles').append('<div class="tile ' + getClassName(numOfBlogs) + '"><div class="tile-inner"><a class="tile-link"><div class="tile-bg"></div><div class="tile-media"><img class="tile-media-bg" src="{{post.image}}" alt="Blog Title" /></div><div class="tile-content"><div class="tile-content-inner"><h2 class="tile-title">{{ post.title }}</h2></div></div></a></div><section><div class="shine top"></div><div class="shine bottom"></div></section></div>');
+                                {% endfor %}
+                            }
+
+                            function getClassName(numOfBlogs) {
+                                var className = "";
+                                switch(numOfBlogs) {
+                                    case 1:
+                                        className = "large";
+                                        break;
+                                    case 2:
+                                        className = "medium";
+                                        break;
+                                    case 3:
+                                        className = "small";
+                                        break;
+                                }
+                                return className;
+                            }
+
+                            function createRows(type, numOfRows) {
+                                var numOfTiles;
+                                var tileType;
+
+                                if(type == "double") {
+                                    numOfTiles = 2;
+                                    tileType = "medium";
+                                } else {
+                                    numOfTiles = 3;
+                                    tileType = "small";
+                                }
+
+                                for(var i = 0; i < numOfRows; i++) {
+                                    for(var n = 0; n < numOfTiles; n++) {
+                                        createTile(tileType, postCount);
+                                    }
+                                }
+                            }
+
+                            function createTile(type){
+                                $('#tiles').append('<div class="tile ' + type + '"><div class="tile-inner"><a href="' + posts.posts[postCount].url + '" class="tile-link"><div class="tile-bg"></div><div class="tile-media"><img class="tile-media-bg" src="' + posts.posts[postCount].image + '" alt="Blog Title" /></div><div class="tile-content"><div class="tile-content-inner"><h2 class="tile-title">' + posts.posts[postCount].title + '</h2></div></div></a></div><section><div class="shine top"></div><div class="shine bottom"></div></section></div>');;
+                                postCount++
+                            }
+
+                        });
+                    </script>
+            </section>
+        </div>
+        {% include footer.html %}
+</body>
+</html>

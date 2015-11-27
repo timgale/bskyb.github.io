@@ -1,16 +1,310 @@
 ---
-layout: default
 title: Work For Us
 ---
-<h3>Work For Us</h3>
+{% include head.html %}
 
-<div class="alpha skycom-12">
-    {% include hero.html %}
-</div>
-<div class="alpha skycom-12">
-    <hr class="featurette-divider">
-    <!-- Need email address and subject -->
-    <p>Send us an email <a href="mailto:someone@example.com?Subject=Jobs in Technology" target="_top">here</a> with a copy of your CV to show your interest in working for us.</p>
-</div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
+        <link rel="stylesheet" href="http://web-toolkit.global.sky.com/2.3.6/stylesheets/toolkit.css"/>
+<!--        <link rel="stylesheet" href="//octicons.github.com/components/octicons/octicons/octicons.css"/>-->
+        <link rel='stylesheet' href='//assets.sky.com/dist/1235/fonts/skyicons.css'>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" type="text/css" href="../scripts/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../scripts/slick/slick-theme.css"/>
+        <script type="text/javascript" src="../scripts/slick/slick.js"></script>
+<!--        <link rel="stylesheet" href="/css/toolkit-article-fix.css"/>-->
+        <title>Sky Developers</title>
+    </head>
 
-    
+    <body>
+        <div class="polaris-wrapper workforus">
+            <section class="hero-container">
+                <div class="hero-wrapper"></div>
+            </section>
+            <section class="tile-container top">
+                <div class="description small-long">
+                    <h2>Work For Us</h2>
+                    <hr>
+                    <p>As part of one of our high performance delivery teams you’ll leverage cutting edge technology to build systems at scale and drive Sky forward, if this is a challenge that you feel equipped to meet then send us your details via the 'Apply Now' link to the right.</p>
+                </div>
+                <div class="tile small apply" id="tile-1">
+                    <div class="tile-inner">
+                        <a class="tile-link">
+                            <div class="tile-bg"></div>
+                            <div class="tile-media">
+                                <span class="mega-octicon octicon-checklist"></span>
+                            </div>
+                            <div class="tile-content">
+                                <div class="tile-content-inner">
+                                    <h2 class="tile-title">Apply Now</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <section>
+                        <div class="shine top"></div>
+                        <div class="shine bottom"></div>
+                    </section>
+                </div>
+                <div class="panel" id="panel1">
+                    <div class="panel-inner">
+                        <div class="panel-header">
+                            <a class="panel-close" id="tile_1-close"><span class="skycon--close"></span>Close</a>
+                        </div>
+                        <div class="panel-content">
+                            <h3>Interested in working for us?</h3>
+                            <form id="contact-form" class="sky-form" action="javascript:submitForm()" method="POST">
+                                <div class="form-left">
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                    <input type="hidden" name="_subject" value="New submission!" />
+                                    <div class="row form">
+                                      <label for="fullName">Full Name *</label>
+                                      <input id="fullName" type="text" name="name" placeholder="Enter your name" required/>
+                                    </div>
+                                    <div class="row form">
+                                      <label for="email">Email *</label>
+                                      <input id="email" type="email" placeholder="Enter your E-mail"/ name="_replyto" required>
+                                    </div>
+                                    <label id="skills">What are your Skills? <span class="italicLabel">(Please tick all that are applicable)</span></label>
+                                    <div class="row form no-label">
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="Java"/>
+                                          <label for="Java">Java</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="CSharp"/>
+                                          <label for="CSharp">C#</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="C++"/>
+                                          <label for="C++">C++</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="Mobile"/>
+                                          <label for="Mobile">Mobile Development</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="Javascript"/>
+                                          <label for="Javascript">Javascript</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="HTML"/>
+                                          <label for="HTML">HTML</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="CSS"/>
+                                          <label for="CSS">CSS</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="PHP"/>
+                                          <label for="PHP">PHP</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="SQL"/>
+                                          <label for="SQL">SQL</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <input type="checkbox" id="Agile"/>
+                                          <label for="Agile">Agile</label>
+                                        </div>
+                                        <div class="row form checkbox">
+                                          <label for="Other">Other:</label>
+                                          <input id="other" type="text" name="otherSkills" placeholder="Other skills"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-right">
+                                    <div class="row form">
+                                      <label for="linkedin">LinkedIn Profile <span class="italicLabel">(Optional)</span></label>
+                                      <input id="linkedin" type="text" placeholder="Enter your LinkedIn Profile URL"/ >
+                                    </div>
+                                    <div class="row form">
+                                      <label for="github">GitHub Profile <span class="italicLabel">(Optional)</span></label>
+                                      <input id="github" type="text" placeholder="Enter your GitHub Profile URL"/ >
+                                    </div>
+                                    <div class="row form">
+                                      <label for="message">Message <span class="italicLabel">(Optional)</span></label>
+                                      <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <div class="row form">
+                                    <div class="g-recaptcha" data-sitekey="6LdQ4g8TAAAAADInd6PlNJ6TRwoNauTFAn7jLz8H"></div>
+                                    </div>
+                                    <div class="row form">
+                                      <button name="form-submit" type="submit" class="form-submit btn primary-cta">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tile-container middle">
+                <blockquote><h2>Join the team that’s always changing the game</h2></blockquote>
+                <div class="text"><p>Sky is Europe’s leading entertainment company; working at Sky means making an impact on 21 million customers across five countries: Italy, Germany, Austria, the UK and Ireland. We offer the best and broadest range of content, deliver market-leading customer service and use innovative new technology to give customers a better TV experience, whenever and wherever they choose.</p> </div>
+            </section>
+
+            <section class="tile-container bottom">
+                <!-- <h2 class="title">Our Stories</h2> -->
+                <h2 class="title">Why Sky?</h2>
+                <div class="row one">
+                    <div class="tile small apply">
+                        <div class="tile-inner">
+                            <a class="tile-link">
+                                <div class="tile-bg"></div>
+                                <div class="tile-media">
+                                    <img class="tile-media-bg" src="/images/assets/build.jpg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                        <section>
+                            <div class="shine top"></div>
+                            <div class="shine bottom"></div>
+                        </section>
+                    </div>
+                    <div class="description small-long">
+                        <h2>Build Cool Stuff</h2>
+                        <hr>
+                        <p>Sky Go, Sky Store and NOW TV are internet TV services where you can watch the latest movies, exclusive live sports and must-see TV shows; they’re available on loads of devices, like your laptop, tablet, smartphone, games console and more. This is now... Sky is continually innovating, join us and find out what we’re working on for the future.</p>
+                    </div>
+                </div>
+                <div class="row two">
+                    <div class="description small-long">
+                        <h2>How we do it</h2>
+                        <hr>
+                        <p>Through the adoption of Lean, Agile and XP principles we follow a quality driven approach to delivery with teams that feel energised and empowered to make the right decisions and to tackle problems that haven’t before been tackled.</p>
+                    </div>
+                    <div class="tile small apply">
+                        <div class="tile-inner">
+                            <a class="tile-link">
+                                <div class="tile-bg"></div>
+                                <div class="tile-media">
+                                    <img class="tile-media-bg" src="/images/assets/agilepen.jpg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                        <section>
+                            <div class="shine top"></div>
+                            <div class="shine bottom"></div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row three">
+                    <div class="tile small apply">
+                        <div class="tile-inner">
+                            <a class="tile-link">
+                                <div class="tile-bg"></div>
+                                <div class="tile-media">
+                                    <img class="tile-media-bg" src="/images/assets/award.jpg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                        <section>
+                            <div class="shine top"></div>
+                            <div class="shine bottom"></div>
+                        </section>
+                    </div>
+                    <div class="description small-long">
+                        <h2>Awards</h2>
+                        <hr>
+                        <p>NOW TV has recently won both the DTG and MongoDB 2015 Innovation Awards; Sky Go was voted App of the Year for two consecutive years, as well as Digital Media Service of the Year.</p>
+                    </div>
+                </div>
+                <div class="row four">
+                    <div class="description small-long">
+                        <h2>Our People</h2>
+                        <hr>
+                        <p>It’s our people that make Sky Europe’s leading entertainment company. That’s why we work hard to be an inclusive employer, so everyone at Sky can be their best.</p>
+                    </div>
+                    <div class="tile small apply">
+                        <div class="tile-inner">
+                            <a class="tile-link">
+                                <div class="tile-bg"></div>
+                                <div class="tile-media">
+                                    <img class="tile-media-bg" src="/images/assets/people.jpeg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                        <section>
+                            <div class="shine top"></div>
+                            <div class="shine bottom"></div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('#tile-1').click(function() {
+                    $(this).toggleClass('selected');
+                    id = this.id;
+                    id = id.split('-');
+                    id = "#panel" + id[1];
+                    $(id).addClass('open');
+                    $('body').css('overflow','hidden');
+                    $("html, body").animate({ scrollTop: $(id).offset().top }, 500);
+                });
+
+                $('.panel-close').click(function(){
+                    $(this).toggleClass('selected');
+                    id = this.id;
+                    //FIX THIS TO BE NICER
+                    idTemp = id.split('-');
+                    id = idTemp[0].split('_');
+                    $(idTemp[0]).toggleClass('selected');
+                    panel = "#panel" + id[1];
+                    $(panel).removeClass('open');
+                    $('body').css('overflow','scroll');
+                });
+            });
+
+            function submitForm(){
+              $.ajax({
+                url: "https://www.google.com/recaptcha/api/siteverify",
+                method: "POST",
+                data: {secret: "6LdQ4g8TAAAAAHqNarWLGV1oTKVPsPCEd8yoyuzG", response: grecaptcha.getResponse()},
+                success: function(data) {
+                  var name = $('#fullName').val() + "\n";
+                  var email = $('#email').val() + "\n";
+                  var skills = ["Java", "CSharp", "C++", "Mobile", "Javascript", "HTML", "CSS", "PHP", "SQL", "Agile"];
+                  var skillsFormatted = "";
+                  for(i = 0; i < skills.length; i++) {
+                      if ($('#' + skills[i]).is(":checked")) {
+                          skillsFormatted += "- " + skills[i] + "\n";
+                      }
+                  }
+                  var otherSkills = $('#other').val() + "\n";
+                  var message = $('#message').val() + "\n";
+                  var linkedIn = $('#linkedin').val() + "\n";
+                  var github = $('#github').val() + "\n";
+
+                  $.ajax({
+                    //url: "//formspree.io/Annelisa.Dinwoodie@sky.uk",
+                    url: "//formspree.io/craig.rees2@sky.uk",
+                    method: "POST",
+                    data: {Name: name, Email: email, Skills: skillsFormatted, Other: otherSkills, LinkedIn: linkedIn, GitHub: github, Message: message},
+                    success: function(data) {
+                      $("#contact-form").children().hide();
+                      $("#contact-form").append("<p>Thank you for contacting us.</p>");
+                    },
+                    dataType: "json",
+                  });
+                },
+                error: function(xhr, status, error) {
+                  alert(error);
+                  alert(xhr.responseText);
+                  alert('error');
+                },
+                dataType: "json"
+              });
+            }
+        </script>
+        {% include footer.html %}
+    </body>
+</html>

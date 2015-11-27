@@ -1,0 +1,56 @@
+.header {
+    height: 100px;
+}
+
+.dev-logo-text{
+    font-size: 25px;
+}
+
+.dev-logo {
+    font-size: 20px;
+    float: left;
+    margin: 0 3%;
+    line-height: 45px;
+
+    a {
+        display:block;
+        text-decoration: none;
+        margin-top: 18px;
+        line-height: 45px;
+
+//        &:hover {
+//            border-bottom: 2px solid #0073c5;
+//            color: #0070a5;
+//            margin-bottom:-2px;
+//        }
+        .dev-logo-image {
+        vertical-align: middle;
+        }
+    }
+}
+
+.menu_button {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    display: block;
+    right: 0;
+    top:0;
+    cursor: pointer;
+    line-height: 46px;
+    text-align: center;
+    font-size: 30px;
+
+    i {
+        display: block;
+        font-size: 15px;
+    }
+}
+
+.tabs.main-menu {
+    float: left;
+    -webkit-transition: all 0.2s ease-out;
+    margin-bottom: 0;
+    width: 71%;
+    border-bottom: none;
+}

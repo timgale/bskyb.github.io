@@ -1,0 +1,221 @@
+/*
+-----------------------------------------
+ > Work For Us Page <
+-----------------------------------------
+*/
+
+.polaris-wrapper.workforus {
+    .hero-wrapper {
+        background-image: url(/images/assets/workforus.jpg);
+        background-size: cover;
+        background-position: 100px -345px;
+    }
+
+    .tile-container.top {
+        padding-left: 0;
+        padding-right: 9.5%;
+        margin-top: -40px;
+
+        .tile.small.apply {
+            width: 25%;
+            margin-left: 8%;
+            margin-right: 0;
+            .tile-media {
+                padding-bottom: 0;
+                span {
+                    font-size: 100px;
+                    margin: 40px auto 0;
+                    color: #fff;
+                    display: table;
+                    transition: all .6s ease;
+                }
+            }
+            .tile-content {
+                padding-bottom: 82px;
+                .tile-title {
+                    color: #fff;
+                    text-align: center;
+                    transition: all .6s ease;
+                }
+            }
+            .tile-bg {
+//                background: radial-gradient(#197bc9,#135fa0);
+                background-color: #0076be;
+                transition: all .6s ease;
+            }
+            .tile-link:hover {
+                .tile-bg {
+//                    background: radial-gradient(#0076be,#0076be);
+                    background-color: #1A90D8;
+                    transition: all .6s ease;
+                }
+                .tile-media span {
+//                    color: #ddd;
+                    transition: all .6s ease;
+                }
+            }
+        }
+
+        .description.small-long {
+            width: 65%;
+            float: left;
+            margin-right: 1.31669%;
+            margin-left: -1px;
+            padding: 30px 30px 30px 8%;
+            border: none;
+            background-color: #734993;
+            color: #fff;
+            h2 {
+                margin: 5px 0 10px;
+            }
+            p {
+                margin: 35px 0 10px;
+            }
+        }
+
+        .panel {
+            h3 {
+                margin-top: 0;
+                margin-bottom: 75px;
+                color: #fff;
+                text-align: center;
+            }
+            form {
+                width: 100%;
+                color: #fff;
+                .form-left {
+                    width: 50%;
+                    float: left;
+                }
+                .form-right {
+                    width: 50%;
+                    float: right;
+                }
+                .row {
+                    min-height: 310px;
+                }
+                .row.form {
+                    min-height: 0;
+                    textarea {
+                        min-width: 400px;
+                        max-width: 400px;
+                        max-height: 250px;
+                    }
+                }
+                .row.checkbox {
+                    margin: 0 0 8px 0;
+                }
+                .row.no-label, .g-recaptcha, .form-submit {
+                    margin-left: 25%;
+                    margin-top: 10px;
+                }
+                .row > label  {
+                    width: 25% !important;
+                }
+                .row > input[type="text"], .row > input[type="email"], .row > textarea {
+                    width: 400px;
+                }
+                #skills {
+                    margin-left: 10%;
+                }
+                #other {
+                    width: 332px;
+                }
+                .form-submit {
+                    margin-top: 80px;
+                    margin-left: 49%;
+                    width: 100px;
+                }
+                .g-recaptcha {
+                    transform: scale(1.325);
+                    transform-origin: 0 0;
+                }
+                .italicLabel {
+                    font-style: italic;
+                }
+                .main-menu {
+                    position: relative;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .tile-container.middle {
+        padding: 0;
+        margin-top: -30px;
+        blockquote {
+            border: none;
+            text-align: center;
+            margin: 100px 0 70px 0;
+            quotes: "\201C""\201D""\2018""\2019";
+            h2 {
+                display: inline-block;
+            }
+            &:before {
+                content: open-quote;
+                font-weight: bold;
+                font-size:100px;
+                color:#ed0677;
+            }
+            &:after {
+                content: close-quote;
+                font-weight: bold;
+                font-size:100px;
+                color:#ed0677;
+            }
+        }
+        .text {
+            background-color: #0076be;
+            padding: 35px 12.5%;
+            margin-top: 40px;
+            color: #fff;
+            p {
+              margin: 0;
+            }
+        }
+    }
+    .tile-container.bottom {
+        margin-top: 40px;
+        .row {
+            margin: 25px 0;
+            float: left;
+            .description.small-long {
+                float:left;
+                width: 66%;
+                padding: 0 20px;
+                margin-bottom: 22px;
+                h2 {
+                    margin-top: 0;
+                }
+            }
+            &.one h2 {
+                color: #a6ce39;
+            }
+            &.one hr {
+                border-color: #a6ce39;
+            }
+            &.two h2 {
+                color: #ed0677;
+            }
+            &.two hr {
+                border-color: #ed0677;
+            }
+            &.three h2 {
+                color: #734993;
+            }
+            &.three hr {
+                border-color: #734993;
+            }
+            &.four h2 {
+                color: #f05423;
+            }
+            &.four hr {
+                border-color: #f05423;
+            }
+            .tile .tile-link:hover {
+                cursor: default;
+            }
+        }
+    }
+}

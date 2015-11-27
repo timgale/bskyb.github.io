@@ -1,22 +1,58 @@
 ---
-layout: default
 title: Open Source
 ---
+{% include head.html %}
 
-<h3>We're contributing back to the open source community</h3>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
+        <link rel="stylesheet" href="http://web-toolkit.global.sky.com/2.3.6/stylesheets/toolkit.css"/>
+        <link rel="stylesheet" href="//octicons.github.com/components/octicons/octicons/octicons.css"/>
+        <link rel='stylesheet' href='//assets.sky.com/dist/1235/fonts/skyicons.css'>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" type="text/css" href="../scripts/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../scripts/slick/slick-theme.css"/>
+        <script type="text/javascript" src="../scripts/slick/slick.js"></script>
+<!--        <link rel="stylesheet" href="/css/toolkit-article-fix.css"/>-->
+        <title>Sky Developers</title>
+    </head>
 
-<p class="lead text--instructions">Our open source projects</p>
-{% for project in site.data.projects %}
-    {% capture project_url %}//github.com/{{project.author}}/{{project.name}}{% endcapture %}
-    {% cycle '<ul class="github clearfix">', '', '', '' %}
-    <li class="skycom-3">
-        <div class="github-thumbnail">
-            <span class="mega-octicon octicon-repo"></span>
-            <a class="author" href="//github.com/{{project.author}}">{{project.author}}</a>
-            <span>/</span>
-            <a class="project" href="{{project_url}}">{{project.name}}</a>
-            <a class="project" href="{{project_url}}"><h4><i>{{project.description}}</i></h4></a>
+    <body>
+        <div class="polaris-wrapper opensource">
+            <section class="hero-container">
+                <div class="hero-wrapper"></div>
+            </section>
+            <div class="tile-container">
+                {% for project in site.data.projects %}
+                {% capture project_url %}//github.com/{{project.author}}/{{project.name}}{% endcapture %}
+                <div class="tile small">
+                    <div class="tile-inner">
+                        <a class="tile-link" href="{{project_url}}">
+                            <div class="tile-bg"></div>
+                            <div class="tile-media">
+                                <span class="mega-octicon octicon-repo" style="color: #{{project.colour}}"></span>
+                            </div>
+                            <div class="tile-content">
+                                <div class="tile-content-inner">
+                                    <h2 class="tile-title project" href="{{project_url}}">{{project.name}}</h2>
+                                    <h4 class="project"><i>{{project.description}}</i></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <section>
+                        <div class="shine top"></div>
+                        <div class="shine bottom"></div>
+                    </section>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-    </li>
-    {% cycle '', '', '', '</ul>' %}
-{% endfor %}
+        {% include footer.html %}
+    </body>
+</html>
