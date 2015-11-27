@@ -67,7 +67,7 @@ excerpt: "Sky are attending Google I/O - here's what we're planning to see any w
 
 * [Create a pull request into master](https://help.github.com/articles/using-pull-requests/). Then wait for it to be merged. It will automatically appear on developers.sky.com once merged.
 
-* Posts that a destined for external viewing will likely take longer to be reviewed, as the post will go through an approval process to ensure it conforms against the [guidelines](https://github.com/BSkyB/bskyb.github.io/wiki/External-Guidelines).
+* Posts that are destined for external viewing will likely take longer to be reviewed, as the post will go through an approval process to ensure it conforms against the [guidelines](https://github.com/BSkyB/bskyb.github.io/wiki/External-Guidelines).
 
 ### A quick note on images
 
@@ -92,7 +92,7 @@ Images can either be served from an external location (in which case, include th
 
 * [Create a pull request into master](https://help.github.com/articles/using-pull-requests/). Then wait for it to be merged. It will automatically appear on developers.sky.com once merged.
 
-* Please ensure it conforms against the [guidelines](https://github.com/BSkyB/bskyb.github.io/wiki/External-Guidelines).
+* Please ensure it conforms to the [guidelines](https://github.com/BSkyB/bskyb.github.io/wiki/External-Guidelines).
 
 ### A quick note on images
 
@@ -117,7 +117,7 @@ Images can either be served from an external location (in which case, include th
 
 * [Create a pull request into master](https://help.github.com/articles/using-pull-requests/). Then wait for it to be merged. It will automatically appear on developers.sky.com once merged.
 
-* Please ensure it conforms against the [guidelines](https://github.com/BSkyB/bskyb.github.io/wiki/External-Guidelines).
+* Please ensure it conforms to the [guidelines](https://github.com/BSkyB/bskyb.github.io/wiki/External-Guidelines).
 
 ### A quick note on images
 
