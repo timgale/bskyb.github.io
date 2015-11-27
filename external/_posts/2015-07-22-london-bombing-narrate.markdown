@@ -3,7 +3,7 @@ layout: post
 title: "Narrate: Innovation in Storytelling"
 author: "George Richmond, Principal Engineer"
 date: 2015-07-22 13:36:00
-image: /images/london-bombing.jpg
+image: /images/blogs/london-bombing.jpg
 ---
 
 
@@ -25,14 +25,10 @@ We needed somewhere to quickly upload our videos and photos, serving them instan
 
 [Divshot’s](https://divshot.com/) beautifully designed web and simple command line interface made it an obvious choice for hosting the HTML, CSS and Javascript of our site. We had a staging and production environment setup in minutes and pushed an early demo straight up to the public internet just by typing ‘divshot push’ and in seconds it was live. Divshot’s built-in blazing fast content delivery network ensured that the site loaded quickly and reliably for our users.
 
-Later, we ensured that every change committed to the codebase was integrated and deployed automatically to our staging site within minutes, with regular deployments to our production site on demand. This meant no nasty surprises at the end and allowed our stakeholders to see the latest updates as they were committed. Rather than manage our builds in-house, we used [Circle CI](https://circleci.com/), who provide continuous integration as a service with minimal configuration. 
+Later, we ensured that every change committed to the codebase was integrated and deployed automatically to our staging site within minutes, with regular deployments to our production site on demand. This meant no nasty surprises at the end and allowed our stakeholders to see the latest updates as they were committed. Rather than manage our builds in-house, we used [Circle CI](https://circleci.com/), who provide continuous integration as a service with minimal configuration.
 
 Sky is a huge technology company and has delivered many major and strategic projects over the years, building our own platforms and frameworks running on our own datacentre infrastructure. However it simply isn’t possible for us to stick to building everything ourselves while rapidly innovating, delivering and keeping ‘lean’. The R&D team has the flexibility to spend a limited budget on buying in new technology services as required and outsourcing the hosting, data storage and integration to third parties, enabled the team to focus on delivering a unique and outstanding experience in time.
 
 It was a real privilege to work on such an important project that pushed the boundaries of digital storytelling from a technical and editorial point of view and we are very grateful to the interviewees for sharing their extraordinary stories with us and our audience.
 
-The Narrate interactive timeline framework is a great opportunity for collaboration across Sky. [Take a look at the code](https://github.com/sky-plc/narrate-web) on our new GitHub organisation and we'd be delighted if you want to contribute. 
-
-
-
-
+The Narrate interactive timeline framework is a great opportunity for collaboration across Sky. [Take a look at the code](https://github.com/sky-plc/narrate-web) on our new GitHub organisation and we'd be delighted if you want to contribute.

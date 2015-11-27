@@ -1,30 +1,36 @@
 <section class="module clearfix tabs-container page-nav whole-page" data-function="tabs" id='main-nav-tabs'>
   <h1 class="dev-logo">
       <a class="internal-link" href="/">
-        <img src="/images/sky-logo.png" height="35" class="dev-logo-image"/>
+        <img src="/images/assets/skyDevSpectrum.png" height="50" class="dev-logo-image"/>
         <span class="dev-logo-text">
-        developers
         </span>
       </a>
   </h1>
 
+<!--
   <label class="menu_button" id="menu_button"><i class="skyicon-menu" aria-hidden="true"></i></label>
   <label class="menu_overlay" id="menu_overlay" for="menu_toggle"></label>
+-->
   <ul id="main-menu" class="tabs clearfix main-menu" role="tablist">
 
     {% for p in site.data.navigation %}
-      {% if p.title %}
-        {% if p.title != "Open Source" %}
-          {% if p.url == page.url%}
-            <li id="{{p.title}}" class="tab selected" role="tab">
-          {% else %}
-            <li id="{{p.title}}" class="tab" role="tab">
-          {% endif %}
-            <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
-          </li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+       {% if p.title %}
+           {% if p.url == page.url%}
+             <li id="{{p.title}}" class="tab selected" role="tab">
+           {% else %}
+             <li id="{{p.title}}" class="tab" role="tab">
+           {% endif %}
+             <a href="{{ p.url | prepend: site.baseurl }}" class="ellipsis internal-link"><span>{{ p.title }}</span></a>
+
+           <!-- {% if p.title == "Events & Talks" %}
+            <ul class="sub-menu">
+              <li><a href="{{ p.url | prepend: site.baseurl }}#upcoming" onclick="scrollToAnchor('upcoming')">Upcoming Events &amp; Talks</a></li>
+              <li><a href="{{ p.url | prepend: site.baseurl }}#talksgiven" onclick="scrollToAnchor('talksgiven')">Talks We've Given</a></li>
+            </ul>
+           {% endif %} -->
+           </li>
+       {% endif %}
+     {% endfor %}
   </ul>
 </section>
 

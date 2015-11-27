@@ -1,0 +1,37 @@
+/*
+-----------------------------------------
+ > Open Source Page <
+-----------------------------------------
+*/
+.polaris-wrapper.opensource .hero-wrapper {
+  background-image: url(/images/assets/opensource.jpg);
+  background-size: cover;
+  background-position: 0px -145px;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .mega-octicon {
+  color: #734993;
+  font-size: 100px;
+  margin: 30px auto 0;
+  text-align: center;
+  display: block;
+  transition: all .4s ease;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .tile-media {
+  padding-bottom: 0;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .tile-content .tile-content-inner {
+  text-align: center;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .tile-content .tile-content-inner h4 i {
+  color: #0076be;
+  transition: all .4s ease;
+}
+
+.polaris-wrapper.opensource .tile-container .tile-link:hover .mega-octicon, .polaris-wrapper.opensource .tile-container .tile-link:hover h4 i {
+  color: #fff !important;
+  transition: all .4s ease;
+}

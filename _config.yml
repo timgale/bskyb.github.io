@@ -4,6 +4,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://developers.sky.com" # the base hostname & protocol for your site
 
 # Build settings
-highlighter: true
+highlighter: pygments
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 permalink: pretty

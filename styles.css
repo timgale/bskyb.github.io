@@ -1,0 +1,915 @@
+@charset "UTF-8";
+/*
+-----------------------------------------
+ > Misc. <
+-----------------------------------------
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.skycom-container.legal {
+  margin: 0 14%;
+}
+
+article {
+  padding: 20px 0;
+}
+
+/*
+-----------------------------------------
+ > Tiles <
+-----------------------------------------
+*/
+.tile-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  position: relative;
+  clear: both;
+  margin-top: -45px;
+}
+
+.tile-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.tile-container .title {
+  color: #fff;
+  width: 64%;
+  background-color: #333;
+  padding: 15px 15px 15px 45px;
+  margin: 0 -20% 20px;
+  text-align: right;
+}
+
+.tile-container .tile {
+  position: relative;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 22px;
+  transition: all .6s ease;
+}
+
+.tile-container .tile.small {
+  width: 30.69995%;
+  float: left;
+  margin-left: 1.31669%;
+  margin-right: 1.31669%;
+}
+
+.tile-container .tile.medium {
+  width: 47.36662%;
+  float: left;
+  margin-left: 1.31669%;
+  margin-right: 1.31669%;
+}
+
+.tile-container .tile.large {
+  width: 97.36662%;
+  float: left;
+  margin-left: 1.31669%;
+  margin-right: 1.31669%;
+}
+
+.tile-container .tile:after {
+  border-bottom: 0px solid #fff;
+  transition: all .6s ease;
+}
+
+.tile-container .tile:focus {
+  outline: none;
+}
+
+.tile-container .tile-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.tile-container .tile-inner:hover ~ section .shine {
+  opacity: .9;
+}
+
+.tile-container .tile-inner:hover ~ section .shine.top {
+  background-position: 100% 50%;
+}
+
+.tile-container .tile-inner:hover ~ section .shine.bottom {
+  background-position: 0 50%;
+}
+
+.tile-container .tile-link {
+  display: block;
+  text-decoration: none;
+}
+
+.tile-container .tile-link:hover {
+  cursor: pointer;
+}
+
+.tile-container .tile-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #eee;
+  transition: all .6s ease;
+}
+
+.tile-container .tile-media {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile-container .tile-media .tile-media-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border: 0;
+  transition: -webkit-transform 1s ease,margin 1s ease;
+  transition: transform .6s ease,margin 1s ease;
+}
+
+.tile-container .tile-content {
+  padding-bottom: 150px;
+  position: relative;
+}
+
+.tile-container .tile-content .tile-content-inner {
+  position: absolute;
+  left: 1.5vw;
+  right: 1.5vw;
+  top: 1.1vw;
+  bottom: 1vw;
+}
+
+.tile-container .tile-content .tile-content-inner .tile-title {
+  color: #222;
+  font-size: 1.97368vw;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  font-family: SkyTextRegular,Helvetica,Arial,Sans-Serif;
+  font-weight: 400;
+  transition: all .4s ease;
+}
+
+.tile-container .shine {
+  position: absolute;
+  width: 140%;
+  height: 8.51852%;
+  left: -20%;
+  background: transparent 0 50% no-repeat url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaYAAAAuCAMAAABUO00wAAACQFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////++8ZnNAAAAv3RSTlMAAgQGCAoMDhASFBYXGRsdHyEjJSYoKiwuMDEzNTc4Ojw+P0FDRUZISktNT1BSVFVXWVpcXV9hYmRlZ2hqa21ucHFzdHZ3eXp8fX+AgYOEhoeIiouMjo+QkpOUlpeYmZucnZ6goaKjpKanqKmqq62ur7CxsrO0tba4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/k9ExUwAAAhoSURBVHja7VztdqO6DtWWbMh5/4edgi3p/pANhqRN2jMz59JVVkMMIYFqZ+tjywR0+QVt5eNOp2+14PrwvLP4dwIL3xGh74cV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");
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: background-position .6s ease-out,opacity .6s ease-out;
+}
+
+.tile-container .shine.top {
+  top: -3.7037%;
+  background-position: 0 50%;
+}
+
+.tile-container .shine.bottom {
+  bottom: -3.7037%;
+  background-position: 100% 50%;
+}
+
+/*
+-----------------------------------------
+ > Panels <
+-----------------------------------------
+*/
+.panel {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #222;
+  clear: both;
+  float: none;
+  max-height: 200vh;
+  position: fixed;
+  overflow: hidden;
+  height: 0;
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+.panel .panel-inner {
+  display: table;
+  height: 100vh;
+  min-height: 100vh;
+  line-height: 100vh;
+  position: relative;
+  max-width: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  width: 100%;
+}
+
+.panel .panel-inner .panel-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 1rem;
+  overflow: hidden;
+}
+
+.panel .panel-inner .panel-header .panel-close {
+  color: #fff;
+  display: block;
+  font-size: 2em;
+  line-height: 60px;
+  position: absolute;
+  right: calc(4% - 22px);
+  padding: 0 14px;
+  top: 0;
+}
+
+.panel .panel-inner .panel-header .panel-close .skycon--close {
+  font-size: .8em;
+  color: #fff;
+}
+
+.panel .panel-inner .panel-header .panel-close .skycon--close:before {
+  margin: -5px 10px 0 0;
+}
+
+.panel .panel-inner .panel-header .panel-close:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.panel .panel-inner .panel-header .panel-close:hover .skycon--close {
+  color: #ccc;
+}
+
+.panel .panel-inner .panel-content {
+  display: table-cell;
+  overflow: visible;
+  height: auto;
+  vertical-align: middle;
+  line-height: 1rem;
+  padding: 60px 0;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.panel .panel-inner .panel-content .panel-media {
+  width: 70%;
+  float: left;
+  position: relative;
+}
+
+.panel .panel-inner .panel-content .panel-media iframe, .panel .panel-inner .panel-content .panel-media img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 5px;
+  transition: all 0.6s ease;
+}
+
+.panel .panel-inner .panel-content .panel-media .shine {
+  position: absolute;
+  width: 140%;
+  height: 8.51852%;
+  left: -20%;
+  background: transparent 0 50% no-repeat url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaYAAAAuCAMAAABUO00wAAACQFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////++8ZnNAAAAv3RSTlMAAgQGCAoMDhASFBYXGRsdHyEjJSYoKiwuMDEzNTc4Ojw+P0FDRUZISktNT1BSVFVXWVpcXV9hYmRlZ2hqa21ucHFzdHZ3eXp8fX+AgYOEhoeIiouMjo+QkpOUlpeYmZucnZ6goaKjpKanqKmqq62ur7CxsrO0tba4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/k9ExUwAAAhoSURBVHja7VztdqO6DtWWbMh5/4edgi3p/pANhqRN2jMz59JVVkMMIYFqZ+tjywR0+QVt5eNOp2+14PrwvLP4dwIL3xGh74cV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");
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: background-position 1s ease-out .1s, opacity 1s ease-out .1s;
+}
+
+.panel .panel-inner .panel-content .panel-media .shine.top {
+  top: -3.7037%;
+  background-position: 0 50%;
+}
+
+.panel .panel-inner .panel-content .panel-media .shine.bottom {
+  bottom: -3.7037%;
+  background-position: 100% 50%;
+}
+
+.panel .panel-inner .panel-content .panel-info {
+  color: #fff;
+  width: 27.14286%;
+  float: left;
+  margin-left: 2%;
+}
+
+.panel .panel-inner .panel-content .panel-info .panel-title {
+  margin-top: 0;
+}
+
+.panel.open {
+  height: 100vh;
+  overflow: auto;
+  transition: all .6s ease;
+}
+
+/*
+-----------------------------------------
+ > Zoom & Shine Effect <
+-----------------------------------------
+*/
+.tile-link:hover .tile-media-bg {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+
+.tile-link:hover .tile-title {
+  color: #fff !important;
+  transition: all .4s ease;
+}
+
+.tile-link:hover .tile-bg {
+  background-color: #5090b8;
+  transition: all .6s ease;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.panel.open .panel-media section .shine {
+  -webkit-animation: fadeInOut 1.2s linear .1s;
+  animation: fadeInOut 1.2s linear .1s;
+}
+
+.panel.open .panel-media section .shine.top {
+  background-position: 100% 50% !important;
+}
+
+.panel.open .panel-media section .shine.bottom {
+  background-position: 0 50% !important;
+}
+
+.header {
+  height: 100px;
+}
+
+.dev-logo-text {
+  font-size: 25px;
+}
+
+.dev-logo {
+  font-size: 20px;
+  float: left;
+  margin: 0 3%;
+  line-height: 45px;
+}
+
+.dev-logo a {
+  display: block;
+  text-decoration: none;
+  margin-top: 18px;
+  line-height: 45px;
+}
+
+.dev-logo a .dev-logo-image {
+  vertical-align: middle;
+}
+
+.menu_button {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  display: block;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  line-height: 46px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.menu_button i {
+  display: block;
+  font-size: 15px;
+}
+
+.tabs.main-menu {
+  float: left;
+  -webkit-transition: all 0.2s ease-out;
+  margin-bottom: 0;
+  width: 71%;
+  border-bottom: none;
+}
+
+/*
+-----------------------------------------
+ > Index Page <
+-----------------------------------------
+*/
+.polaris-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 4vw;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.polaris-wrapper * {
+  box-sizing: inherit;
+}
+
+.hero-container {
+  position: relative;
+  padding-bottom: 32.5%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-container .hero-wrapper {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-container .hero-wrapper .hero-vid {
+  margin-top: -185px;
+}
+
+/*
+-----------------------------------------
+ > Meetup Page <
+-----------------------------------------
+*/
+.panel-image {
+  width: 100% !important;
+}
+
+.panel-content ul {
+  list-style-type: circle;
+  line-height: 18px;
+  margin-left: 8%;
+}
+
+.polaris-wrapper.slider .img-container {
+  height: 468px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.polaris-wrapper.slider .tile-container {
+  margin-top: -170px;
+}
+
+.polaris-wrapper.slider .tile-container h2 {
+  color: #fff;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-prev, .polaris-wrapper.slider .tile-container .sliderTop .slick-next {
+  width: 45px;
+  height: 45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-prev:before, .polaris-wrapper.slider .tile-container .sliderTop .slick-next:before {
+  color: #333;
+  font-size: 45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-prev {
+  left: -45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-next {
+  right: -45px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-dots li button:before {
+  font-size: 18px;
+}
+
+.polaris-wrapper.slider .tile-container .sliderTop .slick-dots {
+  margin: 0;
+}
+
+.slider-panel .panel-media {
+  width: 60% !important;
+}
+
+.slider-panel .panel-info {
+  width: 35% !important;
+  margin-left: 4% !important;
+}
+
+.slider-panel .occurred {
+  color: #F05423;
+  font-size: 22px;
+}
+
+.polaris-wrapper.talks .tile-container {
+  margin-top: 0;
+}
+
+.polaris-wrapper.slider .title, .polaris-wrapper.talks .title {
+  color: #fff;
+  width: 64%;
+  background-color: #333;
+  padding: 15px 15px 15px 315px;
+  margin: 0 -20% 20px;
+  text-align: right;
+}
+
+.tile-meta {
+  color: #555;
+  font-weight: bold;
+  transition: all .4s ease;
+}
+
+.tile-meta.occurred {
+  color: #F05423;
+  font-size: 18px;
+}
+
+.tile-link:hover .tile-meta {
+  color: #fff;
+  font-weight: bold;
+  transition: all .4s ease;
+}
+
+.tile-media-bg.blur {
+  z-index: 1;
+  -webkit-filter: blur(4px);
+}
+
+.panel-des.occurred {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 20px;
+  line-height: 20px;
+}
+
+.panel-des a, .panel-des .link {
+  color: #9a9a9a;
+  transition: all 0.2s ease;
+}
+
+.panel-des a:hover, .panel-des .link:hover {
+  color: #ababab;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/*
+-----------------------------------------
+ > Work For Us Page <
+-----------------------------------------
+*/
+.polaris-wrapper.workforus .hero-wrapper {
+  background-image: url(/images/assets/workforus.jpg);
+  background-size: cover;
+  background-position: 100px -345px;
+}
+
+.polaris-wrapper.workforus .tile-container.top {
+  padding-left: 0;
+  padding-right: 9.5%;
+  margin-top: -40px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply {
+  width: 25%;
+  margin-left: 8%;
+  margin-right: 0;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply .tile-media {
+  padding-bottom: 0;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply .tile-media span {
+  font-size: 100px;
+  margin: 40px auto 0;
+  color: #fff;
+  display: table;
+  transition: all .6s ease;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply .tile-content {
+  padding-bottom: 82px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply .tile-content .tile-title {
+  color: #fff;
+  text-align: center;
+  transition: all .6s ease;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply .tile-bg {
+  background-color: #0076be;
+  transition: all .6s ease;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply .tile-link:hover .tile-bg {
+  background-color: #1A90D8;
+  transition: all .6s ease;
+}
+
+.polaris-wrapper.workforus .tile-container.top .tile.small.apply .tile-link:hover .tile-media span {
+  transition: all .6s ease;
+}
+
+.polaris-wrapper.workforus .tile-container.top .description.small-long {
+  width: 65%;
+  float: left;
+  margin-right: 1.31669%;
+  margin-left: -1px;
+  padding: 30px 30px 30px 8%;
+  border: none;
+  background-color: #734993;
+  color: #fff;
+}
+
+.polaris-wrapper.workforus .tile-container.top .description.small-long h2 {
+  margin: 5px 0 10px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .description.small-long p {
+  margin: 35px 0 10px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel h3 {
+  margin-top: 0;
+  margin-bottom: 75px;
+  color: #fff;
+  text-align: center;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form {
+  width: 100%;
+  color: #fff;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .form-left {
+  width: 50%;
+  float: left;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .form-right {
+  width: 50%;
+  float: right;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .row {
+  min-height: 310px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .row.form {
+  min-height: 0;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .row.form textarea {
+  min-width: 400px;
+  max-width: 400px;
+  max-height: 250px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .row.checkbox {
+  margin: 0 0 8px 0;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .row.no-label, .polaris-wrapper.workforus .tile-container.top .panel form .g-recaptcha, .polaris-wrapper.workforus .tile-container.top .panel form .form-submit {
+  margin-left: 25%;
+  margin-top: 10px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .row > label {
+  width: 25% !important;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .row > input[type="text"], .polaris-wrapper.workforus .tile-container.top .panel form .row > input[type="email"], .polaris-wrapper.workforus .tile-container.top .panel form .row > textarea {
+  width: 400px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form #skills {
+  margin-left: 10%;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form #other {
+  width: 332px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .form-submit {
+  margin-top: 80px;
+  margin-left: 49%;
+  width: 100px;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .g-recaptcha {
+  transform: scale(1.325);
+  transform-origin: 0 0;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .italicLabel {
+  font-style: italic;
+}
+
+.polaris-wrapper.workforus .tile-container.top .panel form .main-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.polaris-wrapper.workforus .tile-container.middle {
+  padding: 0;
+  margin-top: -30px;
+}
+
+.polaris-wrapper.workforus .tile-container.middle blockquote {
+  border: none;
+  text-align: center;
+  margin: 100px 0 70px 0;
+  quotes: "“" "”" "‘" "’";
+}
+
+.polaris-wrapper.workforus .tile-container.middle blockquote h2 {
+  display: inline-block;
+}
+
+.polaris-wrapper.workforus .tile-container.middle blockquote:before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 100px;
+  color: #ed0677;
+}
+
+.polaris-wrapper.workforus .tile-container.middle blockquote:after {
+  content: close-quote;
+  font-weight: bold;
+  font-size: 100px;
+  color: #ed0677;
+}
+
+.polaris-wrapper.workforus .tile-container.middle .text {
+  background-color: #0076be;
+  padding: 35px 12.5%;
+  margin-top: 40px;
+  color: #fff;
+}
+
+.polaris-wrapper.workforus .tile-container.middle .text p {
+  margin: 0;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom {
+  margin-top: 40px;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row {
+  margin: 25px 0;
+  float: left;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row .description.small-long {
+  float: left;
+  width: 66%;
+  padding: 0 20px;
+  margin-bottom: 22px;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row .description.small-long h2 {
+  margin-top: 0;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.one h2 {
+  color: #a6ce39;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.one hr {
+  border-color: #a6ce39;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.two h2 {
+  color: #ed0677;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.two hr {
+  border-color: #ed0677;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.three h2 {
+  color: #734993;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.three hr {
+  border-color: #734993;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.four h2 {
+  color: #f05423;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row.four hr {
+  border-color: #f05423;
+}
+
+.polaris-wrapper.workforus .tile-container.bottom .row .tile .tile-link:hover {
+  cursor: default;
+}
+
+/*
+-----------------------------------------
+ > Open Source Page <
+-----------------------------------------
+*/
+.polaris-wrapper.opensource .hero-wrapper {
+  background-image: url(/images/assets/opensource.jpg);
+  background-size: cover;
+  background-position: 0px -145px;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .mega-octicon {
+  color: #734993;
+  font-size: 100px;
+  margin: 30px auto 0;
+  text-align: center;
+  display: block;
+  transition: all .4s ease;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .tile-media {
+  padding-bottom: 0;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .tile-content .tile-content-inner {
+  text-align: center;
+}
+
+.polaris-wrapper.opensource .tile-container .tile .tile-content .tile-content-inner h4 i {
+  color: #0076be;
+  transition: all .4s ease;
+}
+
+.polaris-wrapper.opensource .tile-container .tile-link:hover .mega-octicon, .polaris-wrapper.opensource .tile-container .tile-link:hover h4 i {
+  color: #fff !important;
+  transition: all .4s ease;
+}
+
+.post-header-title {
+  color: #fff;
+  width: 980px;
+  background-color: #734993;
+  margin-left: -330px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.post-header-title h1 {
+  font-weight: bold;
+}
+
+.post-meta {
+  line-height: 0;
+  padding-bottom: 18px;
+}
+
+.post h2 {
+  color: #734993;
+  font-weight: bold;
+}
+
+.post th, .post a {
+  color: #734993;
+}

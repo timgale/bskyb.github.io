@@ -1,218 +1,166 @@
 ---
-layout: default
 title: Events &amp; Talks
 ---
-<h2>Upcoming Events &amp; Talks</h2>
+{% include head.html %}
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/events/225199988/">LeedsTechHub - Lean UX, Analytics and Performance</a></h3>
-          <span class="published-date">26 October 2015, Leeds</span>
-          <p>
-            <b>Jeff Gothelf</b>, author of the O'Reilly book “Lean UX: Applying lean principles to improve user experience”, takes a look at what he’s learned in the past 5 years, how his own thinking has evolved and what the future of great team collaboration and product development looks like.
-          </p>
-          <p>
-            <b>Jonny Longden</b> talks about the ways in which Sky is transferring culture and structure to embed analytics in agile so that performance improvement is both data driven and firmly owned by the agile team.
-          </p>
-      </div>
-      <div class="skycom-6">
-        <img class="img-responsive center-block circlecontainer" src="/images/leedstechhub.png" class="image" alt="Leeds Tech Hub" border="1">
-      </div>
-  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
+        <link rel="stylesheet" href="http://web-toolkit.global.sky.com/2.3.6/stylesheets/toolkit.css"/>
+<!--        <link rel="stylesheet" href="//octicons.github.com/components/octicons/octicons/octicons.css"/>-->
+        <link rel='stylesheet' href='//assets.sky.com/dist/1235/fonts/skyicons.css'>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" type="text/css" href="../scripts/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../scripts/slick/slick-theme.css"/>
+        <script type="text/javascript" src="../scripts/slick/slick.js"></script>
+        <script src="/scripts/moment.js"></script>
+<!--        <link rel="stylesheet" href="/css/toolkit-article-fix.css"/>-->
+        <script>
+        $(document).ready(function(){
+            $.get('../events.json', function(data) {
+                    var content = "";
+                    var banners = "";
+                    var panel ="";
+                  $.each(data.events, function(i, item) {
+                   id = i + 1;
 
-  <hr class="featurette-divider">
+                   var eventStartDate = moment(item.start_date);
+                   var eventEndDate = moment(item.end_date);
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="https://www.mongodb.com/events/mongodb-days-uk/">MongoDB Days UK 2015</a></h3>
-          <span class="published-date">5 November 2015, London</span>
-          <p>
-              <b>Tom Maule</b> talks about how NOW TV has scaled MongoDB for High Load Events</a>
-          </p>
-          <p>
-              NOW TV’s customer base has tripled year on year, and linear event streaming has become a greater and greater percentage of their viewing.
-              This talk will take you through the lessons we learnt following one unfortunate event in 2014 which led NOW TV to catastrophic failure,
-              and the improvements and scalability challenges we were faced with when preparing for the same event just 1 year later. Hear how we turned
-              our entire failure case behaviour on its head; from always failing in favour of NOW TV, to failing in favour of the customer. Learn how we
-              ensure that high availability of video assets on the CDN ensures continued playout irrespective of the state of our application servers.
-          </p>
-      </div>
-      <div class="skycom-6">
-          <img class="img-responsive center-block circlecontainer" src="/images/mongodb-days.jpg" class="image" alt="MongoDB Days UK 2015" border="1">
-      </div>
-  </div>
+                   var formattedDate;
+                   if(eventStartDate.isSame(eventEndDate)) {
+                     formattedDate = eventStartDate.format('D MMMM YYYY');
+                   } else if(eventStartDate.month() == eventEndDate.month()) {
+                     var monthYear = moment(eventStartDate.year() + '/' + (eventStartDate.month() + 1)).format('MMMM YYYY');
+                     var days = eventStartDate.date() + '-' + eventEndDate.date();
+                     formattedDate = days + " " + monthYear;
+                   } else if(eventStartDate.year() == eventEndDate.year()) {
+                     var year = moment(eventStartDate.year());
+                     var start = moment((eventStartDate.month() + 1) + "/" + eventStartDate.date()).format('D MMMM');
+                     var end = moment((eventEndDate.month() + 1) + "/" + eventEndDate.date()).format('D MMMM');
+                     formattedDate = start + " - " + end + " " + year;
+                   } else {
+                     var startDate = (moment(eventStartDate.year() + '/' + (eventStartDate.month() + 1) + '/' + eventStartDate.date())).format('D MMMM YYYY');
+                     var endDate = (moment(eventEndDate.year() + '/' + (eventEndDate.month() + 1) + '/' + eventEndDate.date())).format('D MMMM YYYY');
+                     formattedDate = startDate + ' - ' + endDate;
+                   }
 
-  <hr class="featurette-divider">
+                   var weekSinceEvent = moment(eventEndDate).add(7, "days");
+                   if(moment().isAfter(weekSinceEvent)) {
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://europe.apps-world.net/">Apps-World europe 2015</a></h3>
-          <span class="published-date">18-19 November 2015, London</span>
-          <p><b>Fu Ho Lee</b> &amp; <b> Benjamin Tomlinson</b> talk about <a href="http://europe.apps-world.net/agenda/day-2f/">creating a successful approaches to UX and UI</a></p>
-          <ul>
-            <li>The creative, technical and operational processes around developing and deploying an innovative, holistic and future-proof mobile UX strategy.</li>
-            <li>Porting desktop experiences to mobile, and compare this to designing mobile experiences from the ground up</li>
-            <li>How to deliver a genuine innovation and value to consumers</li>
-          </ul>
-      </div>
-      <div class="skycom-6">
-        <img class="img-responsive center-block circlecontainer" src="/images/apps-world-2015.jpeg" class="image" alt="Apps-World 2015" border="1">
-      </div>
-  </div>
+                   } else if(moment().isBetween(moment(eventEndDate.add(1, "days")), weekSinceEvent)) {
+                     content += '<div class="tile medium tile-slider" id="sliderTile-'+ id +'"><div class="tile-inner"><a class="tile-link"><div class="tile-bg"></div><div class="tile-media"><img class="tile-media-bg blur" style="z-index: 1; -webkit-filter: blur(5px);" src="' + item.image + '" alt="' + item.title + '" /></div><div class="tile-content"><div class="tile-content-inner"><h2 class="tile-title">' + item.title + '</h2><h4 class="tile-meta occurred">' + 'This event has already occurred' + '</h4></div></div></a></div><section><div class="shine top"></div><div class="shine bottom"></div></section></div>';
 
-  <hr class="featurette-divider">
+                     panel += '<div class="panel" id="sliderPanel-' + id + '"><div class="panel-inner"><div class="panel-header"><a class="panel-close" id="tile_' + id + '-close"><span class="skycon--close"></span>Close</a></div><div class="panel-content"><div class="panel-media"><img class="panel-image" src="'+ item.image +'"/><section><div class="shine top"></div><div class="shine bottom"></div></section></div><div class="panel-info"><h2 class="panel-title">' + item.title + '</h2><h4 class="panel-date">' + formattedDate + '</h4><hr style="border: 1px solid #F05423"><div class="panel-des occurred">This event has already occurred. A video of the talk will be available soon.</div><hr style="border: 1px solid #F05423"><div class="panel-des">' + item.description + '</div></div></div></div></div>';
 
-  <h2>Talks We've Given</h2>
+                     banners += '<img src="' + item.banner + '"/>'
+                   } else {
+                     content += '<div class="tile medium tile-slider" id="sliderTile-'+ id +'"><div class="tile-inner"><a class="tile-link"><div class="tile-bg"></div><div class="tile-media"><img class="tile-media-bg" src="' + item.image + '" alt="' + item.title + '" /></div><div class="tile-content"><div class="tile-content-inner"><h2 class="tile-title">' + item.title + '</h2><h4 class="tile-meta">' + formattedDate + '</h4></div></div></a></div><section><div class="shine top"></div><div class="shine bottom"></div></section></div>';
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">23 July 2015, Leeds</span>
-          <p><b>Andrew Appleton</b> from Heroku, talks about Ruby microservices.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/0f90qXL3cB0" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
+                     panel += '<div class="panel" id="sliderPanel-' + id + '"><div class="panel-inner"><div class="panel-header"><a class="panel-close" id="tile_' + id + '-close"><span class="skycon--close"></span>Close</a></div><div class="panel-content"><div class="panel-media"><img class="panel-image" src="'+ item.image +'"/><section><div class="shine top"></div><div class="shine bottom"></div></section></div><div class="panel-info"><h2 class="panel-title">' + item.title + '</h2><h4 class="panel-date">' + formattedDate + '</h4><div class="panel-des">' + item.description + '<p>Click <a href="' + item.link + '">here</a> for more information.</p></div></div></div></div></div>';
 
-  <hr class="featurette-divider">
+                     banners += '<img src="' + item.banner + '"/>'
+                   }
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">23 July 2015, Leeds</span>
-          <p><b>Jack Franklin</b> from GoCardless, talks about the JavaScript workflow.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ErNLqqBpPQk" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
 
-  <hr class="featurette-divider">
+                  })
+                  $('.sliderTop').append(content);
+                  $('.img-container').append(banners);
+                  $('.slider-panel').append(panel);
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">23 July 2015, Leeds</span>
-          <p><b>Richard McIntyre</b> talks about how to make your Tech choices work for you.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/YaJDXpzOvak" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
+                  $('.tile-slider').click(function(){
+                    $(this).toggleClass('selected');
+                    id = this.id;
+                    id = id.split('-');
+                    id = "#sliderPanel-" + id[1];
+                    $(id).addClass('open');
+                    $('body').css('overflow','hidden');
+                    $("html, body").animate({ scrollTop: $(id).offset().top }, 500);
+                  });
 
-  <hr class="featurette-divider">
+                  $('.panel-close').click(function(){
+                    $(this).toggleClass('selected');
+                    id = this.id;
+                    idTemp = id.split('-');
+                    id = idTemp[0].split('_');
+                    $(idTemp[0]).toggleClass('selected');
+                    panel = "#sliderPanel-" + id[1];
+                    $(panel).removeClass('open');
+                    $('body').css('overflow','scroll');
+                });
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">23 July 2015, Leeds</span>
-          <p><b>Phil Nash</b> from Twilio, talks about API's and WebHooks.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/gPCpnVn6Dtw" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
+                  $('.img-container').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.sliderTop'
+                  });
 
-  <hr class="featurette-divider">
+                  $('.sliderTop').slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    asNavFor: '.img-container',
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    dots: true,
+                  });
+            });
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">9 July 2015, Leeds</span>
-          <p><b>Cate Huston</b> talks about Unit Testing on iOS.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/5GVoYbZUMg8" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
+            $.get('../talk.json', function(data) {
+                var content = "";
+              $.each(data.talks, function(i, item) {
+               id = i + 1;
+               content += '<div id="tile-' + id + '" class="tile small tile-talks"><div class="tile-inner"><a class="tile-link"><div class="tile-bg"></div><div class="tile-media"><img class="tile-media-bg" src="' + item.image + '" alt="Blog Title" /></div><div class="tile-content"><div class="tile-content-inner"><h2 class="tile-title">' + item.title + '</h2><h4 class="tile-meta">' + item.author + ' | ' + item.date + '</div></div></a></div><section><div class="shine top"></div><div class="shine bottom"></div></section></div><div class="panel" id="panel' + id + '"><div class="panel-inner"><div class="panel-header"><a class="panel-close" id="tile_' + id + '-close"><span class="skycon--close"></span>Close</a></div><div class="panel-content"><div class="panel-media"><iframe width="760" height="515" src="' + item.video + '" frameborder="0" allowfullscreen></iframe><section><div class="shine top"></div><div class="shine bottom"></div></section></div><div class="panel-info"><h2 class="panel-title">' + item.title + '</h2><div class="panel-des">' + item.description + '</div></div></div></div></div>';
+              })
+              $('#talksGiven').append(content);
 
-  <hr class="featurette-divider">
+              $('.tile-talks').click(function(){
+                  $(this).toggleClass('selected');
+                  id = this.id;
+                  id = id.split('-');
+                  id = "#panel" + id[1];
+                  $(id).addClass('open');
+                  $('body').css('overflow','hidden');
+                  $("html, body").animate({ scrollTop: $(id).offset().top }, 500);
+              });
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">9 July 2015, Leeds</span>
-          <p><b>Christopher Compston</b> talks about the Fundamentals of Mobile UX.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/QjF2TMvKVTQ" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
+              $('.panel-close').click(function(){
+                  $(this).toggleClass('selected');
+                  id = this.id;
+                  idTemp = id.split('-');
+                  id = idTemp[0].split('_');
+                  $(idTemp[0]).toggleClass('selected');
+                  panel = "#panel" + id[1];
+                  $(panel).removeClass('open');
+                  $('body').css('overflow','scroll');
+              });
+            });
+        });
+        </script>
+        <title>Sky Developers</title>
+    </head>
 
-  <hr class="featurette-divider">
+    <body>
+<div class="polaris-wrapper slider">
+    <section class="img-container"></section>
+    <section class="tile-container">
+        <h2 class="title">Upcoming Events</h2>
+        <div class="sliderTop"></div>
+    </section>
+</div>
 
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">9 July 2015, Leeds</span>
-          <p><b>Tim Antrobus</b> talks about MVC.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/3hlgHTSenuw" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
+<div class="slider-panel"></div>
 
-  <hr class="featurette-divider">
-
-  <div class="row clearfix">
-      <div class="skycom-6 meetup-event">
-          <h3><a href="http://www.meetup.com/Leeds-TechHub/">Leeds Tech Hub Meetup 2015</a></h3>
-          <span class="published-date">9 July 2015, Leeds</span>
-          <p><b>Tim Medcalf</b> talks about Native vs Hybrid. Why you should still consider native despite this multi-platform world.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/U7_OOQqfPqM" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row clearfix">
-      <div class="skycom-6">
-          <h3><a href="http://www.devoxx.co.uk/">Devoxx UK 2015</a></h3>
-          <span class="published-date">19 June 2015, London</span>
-          <p><b>Tom Maule</b> talks about the scalability challenges NOW TV faces with linear streaming, with reference to large sporting events and the popular fantasy drama; Game of Thrones.</p>
-      </div>
-      <div class="skycom-6 video_wrapper" style="height:340px">
-          <div data-parleys-presentation="now-tv-linear-streaming-unpredictable-scalability-challenge" style="width:560px;height:315px">
-              <script type = "text/javascript" src="//parleys.com/js/parleys-share.js"></script>
-          </div>
-      </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row clearfix">
-      <div class="skycom-6">
-          <h3><a href="http://www.meetup.com/Couchbase-London/">Couchbase London Meetup 2014</a></h3>
-          <p><b>Julien Gagnet</b> talks about our use of Couchbase as a user profile store.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GwE5j5vqaMk" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row clearfix">
-      <div class="skycom-6">
-          <h3><a href="https://ep2013.europython.eu/ep2013/">EuroPython 2013</a></h3>
-          <p><b>Russell Sherwood</b> and <b>David Sale</b> talk about the key points to give you a taster of what life is like in an agile development team.</p>
-      </div>
-      <div class="skycom-6 video_wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/A-Ng73NXcTI" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row clearfix">
-      <div class="skycom-6">
-          <h3><a href="https://ep2013.europython.eu/ep2012/">EuroPython 2012</a></h3>
-          <p><b>Russell Sherwood</b> and <b>David Sale</b> we cover the role of BDD in Agile Development, creating a successful and useful BDD test and BDD usage in continuous integration.</p>
-      </div>
-          <div class="skycom-6 video_wrapper">
-              <iframe width="560" height="315" src="//www.youtube.com/embed/OMLDHNaUMB8" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
+<div class="polaris-wrapper talks">
+    <section id="talksGiven" class="tile-container">
+        <h2 class="title">Talks We've Given</h2>
+    </section>
+</div>
+    {% include footer.html %}
+</body>
+</html>

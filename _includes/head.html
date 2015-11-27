@@ -1,12 +1,14 @@
 <head>
   <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <link rel="stylesheet" href="http://web-toolkit.global.sky.com/2.3.6/stylesheets/toolkit.css"/>
   <link rel="stylesheet" href="//octicons.github.com/components/octicons/octicons/octicons.css"/>
   <link rel='stylesheet' href='//assets.sky.com/dist/1235/fonts/skyicons.css'>
-  <link rel="stylesheet" href="/css/main.css"/>
+<!--  <link rel="stylesheet" href="/css/main.css"/>-->
+  <link rel="stylesheet" href="/styles.css"/>
   <link rel="stylesheet" href="/css/toolkit-article-fix.css"/>
-  <script src="/scripts/clientip.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  {% include scripts.html %}
 
   <title>Sky Developers</title>
 
@@ -15,4 +17,6 @@
   <noscript>
     <meta http-equiv="refresh" content="0;url=/noscript">
   </noscript>
+
+  {% include navigation.html %}
 </head>

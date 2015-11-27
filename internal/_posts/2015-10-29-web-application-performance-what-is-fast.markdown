@@ -1,13 +1,11 @@
 ---
 layout:  post
-title:   "Web Application Performance, What is 'Fast'?"
+title:   "Web Application Performance, What is Fast?"
 author:  "Tom Davidson (Principal Engineer - Online Service)"
 date:    2015-10-29 14:10:00
 image:   http://streamingvectors.com/wp-content/uploads/2014/01/IndiaCarSpeedDialGold32.jpg
 excerpt: "Perceived performance is a key factor in abandonment rate and in the percentage of those abandonments that are permanent. How should we think about performance, measure it and know that we are fast enough?"
 ---
-
-# Web Application Performance, What is 'Fast'?
 
 Perceived performance is a key factor in abandonment rate and in the percentage of those abandonments that are permanent. How should we think about performance, measure it and know that we are fast enough?
 

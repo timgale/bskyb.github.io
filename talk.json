@@ -1,0 +1,115 @@
+{
+  "talks": [{
+    "title": "Angular Connect",
+    "author": "Ricardo Mallols",
+    "link": "http://angularconnect.com/",
+    "date": "23 July 2015",
+    "description": "<p><b>Ricardo Mallols</b> talks about the sign up journey at Sky.</p>",
+    "video": "https://www.youtube.com/embed/TPNOrSAb8Wk",
+    "image": "/images/events/logo/angular.png"
+  }, {
+    "title": "Ruby Microservices",
+    "author": "Andrew Appleton",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "23 July 2015",
+    "description": "<p><b>Andrew Appleton</b> from Heroku, talks about Ruby Microservices at the Leeds Tech Hub Meetup 2015.</p>",
+    "video": "https://www.youtube.com/embed/0f90qXL3cB0",
+    "image": "/images/events/logo/rubyMicroLTH.png"
+  }, {
+    "title": "JavaScript Workflow",
+    "author": "Jack Franklin",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "23 July 2015",
+    "description": "<p><b>Jack Franklin</b> from GoCardless, talks about the JavaScript workflow at the Leeds Tech Hub Meetup 2015.</p>",
+    "video": "https://www.youtube.com/embed/ErNLqqBpPQk",
+    "image": "/images/events/logo/jsWorkFlowLTH.png"
+  }, {
+    "title": "Make your Tech choices work for you",
+    "author": "Richard MxIntyre",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "23 July 2015",
+    "description": "<p><b>Richard McIntyre</b> talks about how to make your Tech choices work for you at the Leeds Tech Hub Meetup 2015.</p>",
+    "video": "https://www.youtube.com/embed/YaJDXpzOvak",
+    "image": "/images/events/logo/techChoicesLTH.png"
+  }, {
+    "title": "APIs and WebHooks",
+    "author": "Phil Nash",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "23 July 2015",
+    "description": "<p><b>Phil Nash</b> from Twilio, talks about API's and WebHooks. at the Leeds Tech Hub Meetup 2015</p>",
+    "video": "https://www.youtube.com/embed/gPCpnVn6Dtw",
+    "image": "/images/events/logo/APIsLTH.png"
+  }, {
+    "title": "Unit Testing on iOS",
+    "author": "Cate Huston",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "9 July 2015",
+    "description": "<p><b>Cate Huston</b> talks about Unit Testing on iOS at the Leeds Tech Hub Meetup 2015.</p>",
+    "video": "https://www.youtube.com/embed/5GVoYbZUMg8",
+    "image": "/images/events/logo/unitTestiOSLTH.png"
+  }, {
+    "title": "Fundamentals of Mobile UX",
+    "author": "Christopher Compston",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "9 July 2015",
+    "description": "<p><b>Christopher Compston</b> talks about the Fundamentals of Mobile UX at the Leeds Tech Hub Meetup 2015.</p>",
+    "video": "https://www.youtube.com/embed/QjF2TMvKVTQ",
+    "image": "/images/events/logo/fundamentalsMobileUXLTH.png"
+  }, {
+    "title": "MVC",
+    "author": "Tim Antrobus",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "9 July 2015",
+    "description": "<p><b>Tim Antrobus</b> talks about MVC at the Leeds Tech Hub Meetup 2015.</p>",
+    "video": "https://www.youtube.com/embed/3hlgHTSenuw",
+    "image": "/images/events/logo/mvcLTH.png"
+  }, {
+    "title": "Native vs Hybrid",
+    "author": "Tim Medcalf",
+    "link": "http://www.meetup.com/Leeds-TechHub/",
+    "date": "9 July 2015",
+    "description": "<p><b>Tim Medcalf</b> talks about Native vs Hybrid at the Leeds Tech Hub Meetup 2015. Why you should still consider native despite this multi-platform world.</p>",
+    "video": "https://www.youtube.com/embed/U7_OOQqfPqM",
+    "image": "/images/events/logo/nativeHybridLTH.png"
+  }, {
+    "title": "Women In Technology",
+    "author": "Sky",
+    "link": "https://www.eventbrite.co.uk/e/women-in-technology-tickets-17207739813/",
+    "date": "25 June 2015",
+    "description": "<p>Sky hosted its first networking event to celebrate Women in Technology, with talks from:</p><ul><li><b>Didier Lebrat</b> - CTO at Sky</li><br /><li><b>Bella Vuillermoz</b> - Director of Women in Leadership at Sky</li><br /><li><b>Kimberley Brown</b> and <b>Stephanie Holmes</b> - Senior Analyst and Associate Developer at Sky</li><br /><li><b>Amelia Humfress</b> - CEO of Steer</li><br /><li><b>Radhika Sanghani</b> - Journalist at The Guardian</li></ul>",
+    "video": "https://www.youtube.com/embed/bXfXk0hAv0s",
+    "image": "/images/events/logo/womenTech.jpg"
+  }, {
+    "title": "Devoxx UK 2015",
+    "author": "Tom Maule",
+    "link": "http://www.devoxx.co.uk/",
+    "date": "19 June 2015",
+    "description": "<p><b>Tom Maule</b> talks about the scalability challenges NOW TV faces with linear streaming, with reference to large sporting events and the popular fantasy drama; Game of Thrones.</p>",
+    "video": "",
+    "image": "/images/events/logo/devox.jpg"
+  }, {
+    "title": "Couchbase London Meetup",
+    "author": "Julien Gagnet",
+    "link": "http://www.meetup.com/Couchbase-London/",
+    "date": "20 October 2014",
+    "description": "<p><b>Julien Gagnet</b> talks about our use of Couchbase as a user profile store.</p>",
+    "video": "https://www.youtube.com/embed/GwE5j5vqaMk",
+    "image": "/images/events/logo/couchbase.jpg"
+  }, {
+    "title": "EuroPython 2013",
+    "author": "Russel Sherwood, David Sale",
+    "link": "https://ep2013.europython.eu/ep2013/",
+    "date": "3 July 2013",
+    "description": "<p><b>Russell Sherwood</b> and <b>David Sale</b> talk about the key points to give you a taster of what life is like in an agile development team.</p>",
+    "video": "https://www.youtube.com/embed/A-Ng73NXcTI",
+    "image": "/images/events/logo/europython2013.png"
+  }, {
+    "title": "EuroPython 2012",
+    "author": "Russel Sherwood, David Sale",
+    "link": "https://ep2013.europython.eu/ep2012/",
+    "date": "5 July 2012",
+    "description": "<p><b>Russell Sherwood</b> and <b>David Sale</b> cover the role of BDD in Agile Development, creating a successful and useful BDD test and BDD usage in continuous integration.</p>",
+    "video": "https://www.youtube.com/embed/OMLDHNaUMB8",
+    "image": "/images/events/logo/europython2012.png"
+  }]
+}

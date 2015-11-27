@@ -4,7 +4,7 @@ title:  “Principles used to achieve true TDD”
 date:   2015-11-05
 author: Christopher Cook
 categories: testing
-image: /images/jasmine-karma-sinon.png
+image: /images/blogs/jasmine-karma-sinon.png
 excerpt: “Principles used to move to a full Test Driven Development in Sky Store Web.”
 ---
 
