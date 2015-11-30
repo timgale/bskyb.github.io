@@ -268,7 +268,7 @@ title: Work For Us
               $.ajax({
                 url: "https://www.google.com/recaptcha/api/siteverify",
                 method: "POST",
-                data: {secret: "6LeL4A8TAAAAAKoJv1Zuk_Azj8PGwD6nfXCceWHW", response: grecaptcha.getResponse()},
+                data: {secret: "6LeL4A8TAAAAAPTd79R2RYIyd9ufKGHvkOIskjMW", response: grecaptcha.getResponse()},
                 success: function(data) {
                   var name = $('#fullName').val() + "\n";
                   var email = $('#email').val() + "\n";
