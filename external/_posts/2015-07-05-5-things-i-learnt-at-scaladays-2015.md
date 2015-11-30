@@ -11,7 +11,7 @@ excerpt: This year again, Scaladays was a blast. It took place in Amsterdam betw
 This year again, Scaladays was a blast. It took place in Amsterdam
 between 8th and 10th June. I was there and here is what I brought back.
 
-# Apache Spark Is Everywhere
+## Apache Spark Is Everywhere
 
 That was the most astonishing to me: [Spark](https://spark.apache.org/docs/latest/index.html) was everywhere.
 
@@ -56,7 +56,7 @@ Talks from Scaladays I recommend about Spark:
 
 I have been playing with Spark lately, expect more about it soon!  
 
-# ScalaJS Is Not Just Another Compiler To JS
+## ScalaJS Is Not Just Another Compiler To JS
 
 Martin presented JS as a new backend to the language, just like it is
 for Clojure. Clearly the level of support is not comparable at this
@@ -83,7 +83,7 @@ Talks from Scaladays I recommend about ScalaJS:
       by Sébastien Doeraene.
 -   [Towards Browser and Server Utopia with Scala.js: an example using CRDTs](https://www.parleys.com/tutorial/towards-browser-server-utopia-scala-js-example-using-crdts) by Richard Dallaway
 
-# Scala: Major Improvements In Sight
+## Scala: Major Improvements In Sight
 
 Martin also walked us through [Dotty](https://github.com/lampepfl/dotty) and [Tasty](https://docs.google.com/document/d/1Wp86JKpRxyWTqUU39H40ZdXOlacTNs20aTj7anZLQDw/edit#heading%3Dh.foemem8hq66y). Tasty is a new typed
 abstract syntax tree used as interchange format with backends and
@@ -116,7 +116,7 @@ conference:
 
 -   [Project Galbma: Actor vs Types](https://www.parleys.com/tutorial/project-galbma-actors-vs-types) by Roland Kuhn
 
-# Performance Is By Design
+## Performance Is By Design
 
 Yes, even on this blog we [already](http://le-carnet.sky.com/posts/2015-01-10-happy-birthday-prof-knuth.html) quoted Pr Knuth: "Early optimisation
 is the root of all evil". That doesn't mean you shouldn't factor in
@@ -136,7 +136,7 @@ While I was attending the last 2 talks, I had this little voice in my
 mind that kept telling me: "you just don't have a performance strategy
 at all…". That's being inspired, that's good.
 
-# Thou Shall Get Out At Tech Conferences
+## Thou Shall Get Out At Tech Conferences
 
 Seriously. I hadn't been to a tech conference for 2 years before going
 to this one<sup><a id="fnr.4" name="fnr.4" class="footref" href="#fn.4">4</a></sup>. On the very first hour there, I realised how big a
