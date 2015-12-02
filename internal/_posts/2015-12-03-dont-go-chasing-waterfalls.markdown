@@ -20,7 +20,7 @@ In the Scrum Guide, only 3 roles are recognised in a Scrum team:
 * Scrum Master
 * Developers
 
-The idea being that the whole team take responsibility for all the work needed to get the software increments delivered. Software is produced collaboratively with the whole taking responsibility for getting the job done. Some developers may have "specialisations" - infrastructure, testing/QA, etc. - but all are developers are far as Scrum is concerned. In many teams (*my current team included*), however, other roles have crept in, so the team looks more like this:
+The idea being that the whole team take responsibility for all the work needed to get the software increments delivered. Software is produced collaboratively with the whole taking responsibility for getting the job done. Some developers may have "specialisations" - infrastructure, testing/QA, etc. - but as far as Scrum is concerned, they are all "developers". In many teams (*my current team included*), however, other roles have crept in, so the team looks more like this:
 
 * Product Owner
 * Scrum Master
