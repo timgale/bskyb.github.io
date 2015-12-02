@@ -58,7 +58,7 @@ When there are dedicated, non-developer roles in a team, the team is no longer c
 I have seen this in many teams.
 
 ### Waterfall stops failing early
-A guiding principle of Agile is "fail early"; in fact, as early as possible. Don't wait until code has been written and handed over to a test team before bugs are discovered. Bugs should be identified as soon as code is checked in (*or earlier, if possible?*). Otherwise, you may be adding code that relies on code that already contains bugs. Very dangerous.
+A guiding principle of Agile is "fail fast"; in fact, fail as early as possible. Don't wait until code has been written and handed over to a test team before bugs are discovered. Bugs should be identified as soon as code is checked in (*or earlier, if possible?*). Otherwise, you may be adding code that relies on code that already contains bugs. Very dangerous.
 
 To be properly Agile, testing should drive development so that bugs are identified (and hopefully fixed) as soon as they are written. 
 
