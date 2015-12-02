@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  “Don't Go Chasing Waterfalls”
+title:  “Don&apos;t Go Chasing Waterfalls”
 date:   2015-12-03
 author: Steve Wells
 categories: agile
-image: /images/blogs/waterfalls.png
+image: /images/blogs/waterfalls.jpg
 excerpt: “How mini-wateralls can creep into agile teams, and how to avoid them.”
 ---
 
