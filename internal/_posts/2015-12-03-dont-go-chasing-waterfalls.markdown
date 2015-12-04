@@ -33,7 +33,7 @@ The idea being that the whole team take responsibility for all the work needed t
 * Developers
 * Testers
 
-In this scenario, the analyst and testers typically are not developers (in the normal, "non-scrum sense of "people who can code"), so we have immediately created a waterfall. The analyst works with the product owner to define stories which are passed over, complete with acceptance criteria, to the developers. The developers write the code, and hand it over to the testers to test.
+In this scenario, the analyst and testers typically are not developers (in the normal, non-Scrum sense of "people who can code"), so we have immediately created a waterfall. The analyst works with the product owner to define stories which are passed over, complete with acceptance criteria, to the developers. The developers write the code, and hand it over to the testers to test.
 
 Sound familiar? Well it's not Niagara Falls, but it is a waterfall. In "classic" waterfall, development and testing phases might well take many months; this kind of "agile waterfall" may only be a few days in each phase, but it is nonetheless a waterfall, and should be avoided.
 
@@ -97,7 +97,7 @@ Make sure the developers collaborate directly with the Product Owner, and do the
 
 Basically, just go back to Scrum - it tells you how to avoid waterfalls. It may not be the most fashionable Agile framework at the moment, but if you do it as per the guide, you'll avoid waterfalls, and all the inherent problems they cause.
 
-Scrum has its' detractors, but don't throw the baby out (*or over the waterfall?*) with the bathwater...
+Scrum has its detractors, but don't throw the baby out (*or over the waterfall?*) with the bathwater...
 
 ## References
 [1] The Scrum Guide [http://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-us.pdf]()
