@@ -4,7 +4,7 @@ title:  “User Story Mapping Workshop”
 date:   2015-12-08
 author: Diego Minelli
 categories: agile
-image: /images/blogs/userstorymapping/userstorymapping.jpg
+image: /images/blogs/userstorymapping/userstorymapping.png.jpg
 excerpt: “How to collaborate effectively and build real shared understanding”
 ---
 ![shared](/images/blogs/userstorymapping/sharedunderstanding.png)
