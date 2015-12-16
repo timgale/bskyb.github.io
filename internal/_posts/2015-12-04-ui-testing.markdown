@@ -48,9 +48,10 @@ Look at the Xcode documentation. That it really the best way to reinforce that:
 
 ### Inside a UITableViewCell, how to get the value/ text from the 1st UILabel
 Based on all the previous questions, this answer is now simple:
--Either via recording a test or looking at the document, a UITableViewCell will be returned in cells.
--To get the text, use staticTexts.
--To get the 1st label, set an identifier and access it by elementMatchingType
+
+- Either via recording a test or looking at the document, a UITableViewCell will be returned in cells.
+- To get the text, use staticTexts.
+- To get the 1st label, set an identifier and access it by elementMatchingType
 
 Therefore:
 `Cells.elementMatchingType(.Any, identifier:"programTitleLabel")`
