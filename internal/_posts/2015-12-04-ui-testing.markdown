@@ -37,7 +37,7 @@ Cells/Buttons etc.. are all queries to return an array of elements at the time. 
 Calling `staticTexts` is the way to return the strings inside elements. Note, `staticTexts` is also a query so the needed element must be retrieved from it.
 
 #### Multiple UILabels inside a Cell
-This is the same as asking how to get text. If contains a string, it will be returned as an element in staticTexts- regardless of how complicated the view hierarchy may seem. Therefore, `cells.elementAtIndex(0).staticTexts.elementAtIndex(1).label` will return the second label inside the first cell.
+This is the same as asking how to get text. If it contains a string, it will be returned as an element in staticTexts- regardless of how complicated the view hierarchy may seem. Therefore, `cells.elementAtIndex(0).staticTexts.elementAtIndex(1).label` will return the second label inside the first cell.
 
 #### What are all the actions that can be applied to an element?
 Look at the Xcode documentation. That it really the best way to reinforce that:
@@ -63,9 +63,9 @@ Good luck UITesting.
 
 Other useful reading:
 
--[WWDC UITesting](https://developer.apple.com/videos/play/wwdc2015-406/)
+- [WWDC UITesting](https://developer.apple.com/videos/play/wwdc2015-406/)
 
--[UI Testing with Xcode 7 and Swift Part 1](http://www.runtimecrash.com/2015/09/08/ui-testing-with-xcode-7-and-swift-part-1/)
+- [UI Testing with Xcode 7 and Swift Part 1](http://www.runtimecrash.com/2015/09/08/ui-testing-with-xcode-7-and-swift-part-1/)
 
--[UI Testing Cheat Sheet](https://github.com/joemasilotti/UI-Testing-Cheat-Sheet)
+- [UI Testing Cheat Sheet](https://github.com/joemasilotti/UI-Testing-Cheat-Sheet)
 
