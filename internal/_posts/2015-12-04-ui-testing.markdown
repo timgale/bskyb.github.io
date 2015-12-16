@@ -8,7 +8,7 @@ image: images/blogs/ui-test.png
 excerpt: "Beginner tips to writing UI tests in Xcode"
 ---
 
-# A Noob’s Guide to Xcode UITesting
+# A Noob&apos;s Guide to Xcode UITesting
 
 A while ago, I needed a new UI Test to verify the new user journey added into the app. I had already seen a couple tutorials and understood the concept of XCUIElementQuery (app.collectionViews does not retain a reference to an element on screen. However, `elementBoundByIndex` does). Tutorials were great but since UITesting is still in its infancy, there seemed to be an absence of quick FAQs. In no way is this a full technical guide to UITesting but it will list some helpful beginner tips. In reality, it’s very straightforward but there are a few (in hindsight glaringly obvious) principles to bear in mind.
 
