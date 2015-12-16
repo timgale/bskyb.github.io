@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Noob’s Guide to Xcode UITesting"
+title:  "A Noob&apos;s Guide to Xcode UITesting"
 date:   2015-12-04 17:04:40
 author: Nicola Asamoah
 categories: ios
