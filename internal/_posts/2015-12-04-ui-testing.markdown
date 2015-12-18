@@ -4,7 +4,7 @@ title:  "A Noob&apos;s Guide to Xcode UITesting"
 date:   2015-12-04 17:04:40
 author: Nicola Asamoah
 categories: ios
-image: images/blogs/ui-test.png
+image: /images/blogs/ui-test.png
 excerpt: "Beginner tips to writing UI tests in Xcode"
 ---
 
