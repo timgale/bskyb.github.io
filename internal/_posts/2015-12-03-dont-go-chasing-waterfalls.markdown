@@ -100,4 +100,4 @@ Basically, just go back to Scrum - it tells you how to avoid waterfalls. It may 
 Scrum has its detractors, but don't throw the baby out (*or over the waterfall?*) with the bathwater...
 
 ## References
-[1] The Scrum Guide [http://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-us.pdf]()
+[1] The Scrum Guide [http://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-us.pdf](http://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-us.pdf)
